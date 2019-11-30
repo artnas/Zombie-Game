@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 420705c61d1b6435c8aa7b1cbd0ce80a, type: 3}
+  m_Name: LocationGameSpawnRuinsModifier
+  m_EditorClassIdentifier: 
+  Active: 1
+  _spawnRateInSquareMeters: 5
+  _maxSpawn: 2000
+  _prefabs:
+  - {fileID: 305287832524562771, guid: c06e629ca0c1fba44ad939757afd6c8c, type: 3}
+  - {fileID: 7449387214273961902, guid: e64487de49a2067469804bb11ef0e341, type: 3}
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  _scaleDownWithWorld: 1
+  _randomizeScale: 1
+  _randomizeRotation: 1
