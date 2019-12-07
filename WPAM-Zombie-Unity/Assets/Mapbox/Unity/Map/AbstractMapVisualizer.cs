@@ -188,6 +188,8 @@ namespace Mapbox.Unity.Map
 			{
 				tile.TileState = MeshGeneration.Enums.TilePropertyState.Loaded;
 				OnTileFinished(tile);
+				//
+				// tile.VectorData.GetLayer("a").GetFeature()
 
 				// Check if all tiles in extent are active tiles
 				if (_map.CurrentExtent.Count == _activeTiles.Count)

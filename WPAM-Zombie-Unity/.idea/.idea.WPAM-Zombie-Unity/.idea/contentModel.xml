@@ -1,240 +1,26 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Projects\WPAM-Zombie\WPAM-Zombie-Unity" t="IncludeRecursive">
+    <e p="C:\Projects\Zombie-Game\WPAM-Zombie-Unity" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="GoogleARCore" t="Include">
-          <e p="Examples" t="Include">
-            <e p="ComputerVision" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="ComputerVisionController.cs" t="Include" />
-                <e p="EdgeDetector.cs" t="Include" />
-                <e p="TextureReader.cs" t="Include" />
-                <e p="TextureReaderApi.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="SDK" t="Include">
-            <e p="InstantPreview" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="InstantPreviewInput.cs" t="Include" />
-                <e p="InstantPreviewManager.cs" t="Include" />
-                <e p="InstantPreviewTrackedPoseDriver.cs" t="Include" />
-              </e>
-            </e>
+        <e p="Imported" t="Include">
+          <e p="IngameDebugConsole" t="Include">
+            <e p="README.txt" t="Include" />
             <e p="Scripts" t="Include">
-              <e p="Anchor.cs" t="Include" />
-              <e p="AndroidPermissionsManager.cs" t="Include" />
-              <e p="AndroidPermissionsRequestResult.cs" t="Include" />
-              <e p="Api" t="Include">
-                <e p="AnchorApi.cs" t="Include" />
-                <e p="ApiApkInstallationStatus.cs" t="Include" />
-                <e p="ApiApkInstallStatusExtensions.cs" t="Include" />
-                <e p="ApiArStatus.cs" t="Include" />
-                <e p="ApiAvailability.cs" t="Include" />
-                <e p="ApiAvailabilityExtensions.cs" t="Include" />
-                <e p="ApiCameraMetadata.cs" t="Include" />
-                <e p="ApiConstants.cs" t="Include" />
-                <e p="ApiDisplayUvCoords.cs" t="Include" />
-                <e p="ApiLightEstimateState.cs" t="Include" />
-                <e p="ApiLightEstimateStateExtensions.cs" t="Include" />
-                <e p="ApiLightEstimationMode.cs" t="Include" />
-                <e p="ApiPlaneFindingMode.cs" t="Include" />
-                <e p="ApiPoseData.cs" t="Include" />
-                <e p="ApiPrestoConfig.cs" t="Include" />
-                <e p="ApiPrestoStatus.cs" t="Include" />
-                <e p="ApiPrestoStatusExtensions.cs" t="Include" />
-                <e p="ApiTrackableType.cs" t="Include" />
-                <e p="ApiTrackableTypeExtensions.cs" t="Include" />
-                <e p="ApiTrackedPointOrientationMode.cs" t="Include" />
-                <e p="ApiTrackedPointOrientationModeExtensions.cs" t="Include" />
-                <e p="ApiTrackingState.cs" t="Include" />
-                <e p="ApiTrackingStateExtensions.cs" t="Include" />
-                <e p="ApiUpdateMode.cs" t="Include" />
-                <e p="CameraApi.cs" t="Include" />
-                <e p="CameraMetadataApi.cs" t="Include" />
-                <e p="FrameApi.cs" t="Include" />
-                <e p="HitTestApi.cs" t="Include" />
-                <e p="LightEstimateApi.cs" t="Include" />
-                <e p="NativeSession.cs" t="Include" />
-                <e p="PlaneApi.cs" t="Include" />
-                <e p="PointApi.cs" t="Include" />
-                <e p="PointCloudApi.cs" t="Include" />
-                <e p="PoseApi.cs" t="Include" />
-                <e p="SessionApi.cs" t="Include" />
-                <e p="SessionConfigApi.cs" t="Include" />
-                <e p="TrackableApi.cs" t="Include" />
-                <e p="TrackableListApi.cs" t="Include" />
-              </e>
-              <e p="ApkAvailabilityStatus.cs" t="Include" />
-              <e p="ApkInstallationStatus.cs" t="Include" />
-              <e p="ARCoreBackgroundRenderer.cs" t="Include" />
-              <e p="ARCoreSession.cs" t="Include" />
-              <e p="ARCoreSessionConfig.cs" t="Include" />
-              <e p="Async" t="Include">
-                <e p="WaitForTaskCompletionYieldInstruction.cs" t="Include" />
-              </e>
-              <e p="AsyncTask.cs" t="Include" />
-              <e p="CameraMetadataTag.cs" t="Include" />
-              <e p="CameraMetadataValue.cs" t="Include" />
-              <e p="Editor" t="Include">
-                <e p="ARCoreRequiredMenuItem.cs" t="Include" />
-                <e p="BuildHelper.cs" t="Include" />
-              </e>
-              <e p="EnvironmentalLight.cs" t="Include" />
-              <e p="Frame.cs" t="Include" />
-              <e p="LightEstimate.cs" t="Include" />
-              <e p="LightEstimateState.cs" t="Include" />
-              <e p="Managers" t="Include">
-                <e p="LifecycleManager.cs" t="Include" />
-                <e p="TrackableManager.cs" t="Include" />
-              </e>
-              <e p="PointCloudPoint.cs" t="Include" />
-              <e p="Session.cs" t="Include" />
-              <e p="SessionStatus.cs" t="Include" />
-              <e p="SessionStatusExtensions.cs" t="Include" />
-              <e p="Trackable.cs" t="Include" />
-              <e p="TrackableHit.cs" t="Include" />
-              <e p="TrackableHitFlags.cs" t="Include" />
-              <e p="TrackableQueryFilter.cs" t="Include" />
-              <e p="TrackedPlane.cs" t="Include" />
-              <e p="TrackedPoint.cs" t="Include" />
-              <e p="TrackedPointOrientationMode.cs" t="Include" />
-              <e p="TrackingState.cs" t="Include" />
-              <e p="Utility" t="Include">
-                <e p="ARCoreProjectSettings.cs" t="Include" />
-                <e p="ARDebug.cs" t="Include" />
-                <e p="ConversionHelper.cs" t="Include" />
-                <e p="IntPtrEqualityComparer.cs" t="Include" />
-                <e p="MarshalingHelper.cs" t="Include" />
-              </e>
+              <e p="CircularBuffer.cs" t="Include" />
+              <e p="ConsoleMethodAttribute.cs" t="Include" />
+              <e p="DebugLogConsole.cs" t="Include" />
+              <e p="DebugLogEntry.cs" t="Include" />
+              <e p="DebugLogIndexList.cs" t="Include" />
+              <e p="DebugLogItem.cs" t="Include" />
+              <e p="DebugLogLogcatListener.cs" t="Include" />
+              <e p="DebugLogManager.cs" t="Include" />
+              <e p="DebugLogPopup.cs" t="Include" />
+              <e p="DebugLogRecycledListView.cs" t="Include" />
+              <e p="DebugsOnScrollListener.cs" t="Include" />
             </e>
-          </e>
-        </e>
-        <e p="GoogleMaps" t="Include">
-          <e p="Editor" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="PropertyDrawers" t="Include">
-                <e p="LatLngDrawer.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="Examples" t="Include">
-            <e p="Benchmarking" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="BenchmarkingScenario.cs" t="Include" />
-                <e p="BenchmarkingScenarioRunner.cs" t="Include" />
-                <e p="BenchmarkMapSettings.cs" t="Include" />
-                <e p="CircularMotion.cs" t="Include" />
-                <e p="FramerateCalculator.cs" t="Include" />
-                <e p="LoadTimeScenario.cs" t="Include" />
-                <e p="PixelCountingScenario.cs" t="Include" />
-                <e p="SustainedFpsScenario.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Materials" t="Include">
-              <e p="ColorUnlit.shader" t="Include" />
-              <e p="ColorWithSpecular.shader" t="Include" />
-              <e p="ColorWithSpecularLod.shader" t="Include" />
-              <e p="NineSlicing" t="Include">
-                <e p="BuildingWall.shader" t="Include" />
-                <e p="BuildingWallDebug.shader" t="Include" />
-                <e p="BuildingWallDebugLod.shader" t="Include" />
-                <e p="BuildingWallLod.shader" t="Include" />
-                <e p="BuildingWallUnlit.shader" t="Include" />
-              </e>
-              <e p="UI" t="Include">
-                <e p="UIOverlay.shader" t="Include" />
-              </e>
-              <e p="WorldspaceTextured" t="Include">
-                <e p="BaseMapWorldspaceTextured.shader" t="Include" />
-                <e p="BaseMapWorldspaceTexturedWater.shader" t="Include" />
-                <e p="BuildingWorldspaceTextured.shader" t="Include" />
-              </e>
-            </e>
-            <e p="Prefabs" t="Include">
-              <e p="Decorations" t="Include">
-                <e p="AcUnitController.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Scripts" t="Include">
-              <e p="AddingComponent.cs" t="Include" />
-              <e p="AdEventReportingExample.cs" t="Include" />
-              <e p="AdminAreaColoring.cs" t="Include" />
-              <e p="ApiKeyChecker.cs" t="Include" />
-              <e p="ArCameraController.cs" t="Include" />
-              <e p="BasicExample.cs" t="Include" />
-              <e p="BuildingBorders.cs" t="Include" />
-              <e p="BuildingExploder.cs" t="Include" />
-              <e p="BuildingLabeller.cs" t="Include" />
-              <e p="BuildingNames.cs" t="Include" />
-              <e p="BuildingsOverRoads.cs" t="Include" />
-              <e p="BuildingSquashing.cs" t="Include" />
-              <e p="BuildingTexturer.cs" t="Include" />
-              <e p="CameraController.cs" t="Include" />
-              <e p="CameraDragController.cs" t="Include" />
-              <e p="CameraFollower.cs" t="Include" />
-              <e p="CustomZoom.cs" t="Include" />
-              <e p="DayAndNight.cs" t="Include" />
-              <e p="DynamicMapsService.cs" t="Include" />
-              <e p="EightDirectionalController.cs" t="Include" />
-              <e p="EmissionController.cs" t="Include" />
-              <e p="ErrorHandling.cs" t="Include" />
-              <e p="ExampleDefaults.cs" t="Include" />
-              <e p="ExampleErrors.cs" t="Include" />
-              <e p="Extruder.cs" t="Include" />
-              <e p="FencingExample.cs" t="Include" />
-              <e p="FloatingOriginUpdater.cs" t="Include" />
-              <e p="FollowCameraController.cs" t="Include" />
-              <e p="GpsInterface.cs" t="Include" />
-              <e p="InstructionsButton.cs" t="Include" />
-              <e p="KitchenSink.cs" t="Include" />
-              <e p="KoreaLoader.cs" t="Include" />
-              <e p="Label.cs" t="Include" />
-              <e p="LoadFailuresExample.cs" t="Include" />
-              <e p="LoadingBarController.cs" t="Include" />
-              <e p="LocationAuth.cs" t="Include" />
-              <e p="LocationFollower.cs" t="Include" />
-              <e p="Lod.cs" t="Include" />
-              <e p="LodController.cs" t="Include" />
-              <e p="Minimap.cs" t="Include" />
-              <e p="MinimapExample.cs" t="Include" />
-              <e p="MissileBehaviour.cs" t="Include" />
-              <e p="NineSlicing.cs" t="Include" />
-              <e p="Parapets.cs" t="Include" />
-              <e p="PlayableLocationsExample.cs" t="Include" />
-              <e p="PrefabReplacement.cs" t="Include" />
-              <e p="RoadBorders.cs" t="Include" />
-              <e p="RoadLabeller.cs" t="Include" />
-              <e p="RoadNames.cs" t="Include" />
-              <e p="RoadWidths.cs" t="Include" />
-              <e p="SearchByPlaceId.cs" t="Include" />
-              <e p="ShaderController.cs" t="Include" />
-              <e p="SliderController.cs" t="Include" />
-              <e p="Squasher.cs" t="Include" />
-              <e p="SunAndMoonController.cs" t="Include" />
-              <e p="TangentLooker.cs" t="Include" />
-              <e p="TouchCameraController.cs" t="Include" />
-              <e p="WorldspaceTexturingExample.cs" t="Include" />
-              <e p="ZoomController.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Materials" t="Include">
-            <e p="BaseMapColor.shader" t="Include" />
-            <e p="BaseMapColorUnlit.shader" t="Include" />
-            <e p="BaseMapTextured.shader" t="Include" />
-            <e p="BaseMapTexturedUnlit.shader" t="Include" />
-            <e p="GoogleMapsShaderLib.cginc" t="Include" />
-            <e p="MuskStandard.shader" t="Include" />
-          </e>
-          <e p="Plugins" t="Include">
-            <e p="Google.Maps.xml" t="Include" />
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="DeviceCountryProvider.cs" t="Include" />
-            <e p="DeviceLocationSignalProvider.cs" t="Include" />
           </e>
         </e>
         <e p="Mapbox" t="Include">
@@ -880,57 +666,19 @@
             </e>
           </e>
         </e>
-        <e p="MapboxAR" t="Include">
-          <e p="Examples" t="Include">
-            <e p="ARPrerequisiteInfo.cs" t="Include" />
-            <e p="ARTabletop" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="ARPlaneHandler.cs" t="Include" />
-                <e p="ARTableTopCameraMovement.cs" t="Include" />
-                <e p="PlaceMapOnARPlane.cs" t="Include" />
-                <e p="SnapMapToTargetTransform.cs" t="Include" />
-                <e p="UpdateShaderCoordinatesByARPlane.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="Camera" t="Include">
-              <e p="ManualTouchCamera.cs" t="Include" />
-              <e p="TouchCamera.cs" t="Include" />
-            </e>
-            <e p="ManualSync" t="Include">
-              <e p="FollowTargetTransform.cs" t="Include" />
-              <e p="RelocateMapByGPS.cs" t="Include" />
-              <e p="RotateOnYTargetTransform.cs" t="Include" />
-              <e p="UpdateMapPosByARPlaneY.cs" t="Include" />
-            </e>
-            <e p="PlayerSizeFromLocationAccuracy.cs" t="Include" />
-          </e>
-          <e p="Unity" t="Include">
-            <e p="Ar" t="Include">
-              <e p="AbstractAlignmentStrategy.cs" t="Include" />
-              <e p="AverageHeadingAlignmentStrategy.cs" t="Include" />
-              <e p="Editor" t="Include">
-                <e p="Tests" t="Include">
-                  <e p="MapboxUnitTests_AverageHeadingAlignmentStrategy.cs" t="Include" />
-                </e>
-              </e>
-              <e p="ISynchronizationContext.cs" t="Include" />
-              <e p="LerpAlignmentStrategy.cs" t="Include" />
-              <e p="ManualSynchronizationContextBehaviour.cs" t="Include" />
-              <e p="SimpleAutomaticSynchronizationContext.cs" t="Include" />
-              <e p="SimpleAutomaticSynchronizationContextBehaviour.cs" t="Include" />
-              <e p="SnapAlignmentStrategy.cs" t="Include" />
-              <e p="Utilities" t="Include">
-                <e p="PlotRoute.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
         <e p="Resources" t="Include">
           <e p="Mapbox" t="Include">
             <e p="MapboxConfiguration.txt" t="Include" />
           </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="GameEventsSpawner.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="NavigationUtilities.cs" t="Include" />
+          <e p="Path.cs" t="Include" />
+          <e p="PlayerCharacter.cs" t="Include" />
+          <e p="UIBar.cs" t="Include" />
+          <e p="Zombie.cs" t="Include" />
         </e>
         <e p="ThirdPartyAssets" t="Include">
           <e p="WoLfulus" t="Include">
@@ -944,112 +692,6 @@
             </e>
           </e>
         </e>
-        <e p="UnityARInterface" t="Include">
-          <e p="ARRemote" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="ARRemoteDevice.cs" t="Include" />
-              <e p="ARRemoteEditor.cs" t="Include" />
-              <e p="ARRemoteEditorInterface.cs" t="Include" />
-              <e p="ARSerializableObjects.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Examples" t="Include">
-            <e p="ARFocusSquare" t="Include">
-              <e p="ARFocusSquare.cs" t="Include" />
-            </e>
-            <e p="Scripts" t="Include">
-              <e p="DemoGUI.cs" t="Include" />
-              <e p="MatchingScalePicker.cs" t="Include" />
-              <e p="ObjectShooter.cs" t="Include" />
-              <e p="OptionsGUI.cs" t="Include" />
-              <e p="PlaceOnPlane.cs" t="Include" />
-              <e p="RemoveRigidbody.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="ARAnchor.cs" t="Include" />
-            <e p="ARBase.cs" t="Include" />
-            <e p="ARController.cs" t="Include" />
-            <e p="ARCoreInterface.cs" t="Include" />
-            <e p="AREditorInterface.cs" t="Include" />
-            <e p="ARInterface.cs" t="Include" />
-            <e p="ARKitInterface.cs" t="Include" />
-            <e p="ARLightEstimate.cs" t="Include" />
-            <e p="ARMessageIds.cs" t="Include" />
-            <e p="ARPlaneVisualizer.cs" t="Include" />
-            <e p="ARPointCloudVisualizer.cs" t="Include" />
-            <e p="BoundedPlane.cs" t="Include" />
-          </e>
-        </e>
-        <e p="UnityARKitPlugin" t="Include">
-          <e p="ARKitRemote" t="Include">
-            <e p="ARKitRemoteConnection.cs" t="Include" />
-            <e p="ConnectionMessageIds.cs" t="Include" />
-            <e p="ConnectToEditor.cs" t="Include" />
-            <e p="EditorHitTest.cs" t="Include" />
-            <e p="ObjectSerializationExtension.cs" t="Include" />
-            <e p="SerializableObjects.cs" t="Include" />
-            <e p="UnityRemoteVideo.cs" t="Include" />
-          </e>
-          <e p="Examples" t="Include">
-            <e p="AddRemoveAnchorExample" t="Include">
-              <e p="UnityARUserAnchorExample.cs" t="Include" />
-            </e>
-            <e p="FocusSquare" t="Include">
-              <e p="FocusSquare.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Plugins" t="Include">
-            <e p="iOS" t="Include">
-              <e p="UnityARKit" t="Include">
-                <e p="Editor" t="Include">
-                  <e p="UnityARBuildPostprocessor.cs" t="Include" />
-                </e>
-                <e p="Helpers" t="Include">
-                  <e p="AR3DOFCameraManager.cs" t="Include" />
-                  <e p="ARPlaneAnchorGameObject.cs" t="Include" />
-                  <e p="DontDestroyOnLoad.cs" t="Include" />
-                  <e p="PointCloudParticleExample.cs" t="Include" />
-                  <e p="UnityARAmbient.cs" t="Include" />
-                  <e p="UnityARAnchorManager.cs" t="Include" />
-                  <e p="UnityARCameraManager.cs" t="Include" />
-                  <e p="UnityARCameraNearFar.cs" t="Include" />
-                  <e p="UnityARGeneratePlane.cs" t="Include" />
-                  <e p="UnityARHitTestExample.cs" t="Include" />
-                  <e p="UnityARKitControl.cs" t="Include" />
-                  <e p="UnityARKitLightManager.cs" t="Include" />
-                  <e p="UnityARMatrixOps.cs" t="Include" />
-                  <e p="UnityARUserAnchorComponent.cs" t="Include" />
-                  <e p="UnityARUtility.cs" t="Include" />
-                  <e p="UnityARVideo.cs" t="Include" />
-                  <e p="UnityPointCloudExample.cs" t="Include" />
-                </e>
-                <e p="NativeInterface" t="Include">
-                  <e p="ARAnchor.cs" t="Include" />
-                  <e p="ARCamera.cs" t="Include" />
-                  <e p="ARErrorCode.cs" t="Include" />
-                  <e p="ARFaceAnchor.cs" t="Include" />
-                  <e p="ARFrame.cs" t="Include" />
-                  <e p="ARHitTestResult.cs" t="Include" />
-                  <e p="ARHitTestResultType.cs" t="Include" />
-                  <e p="ARLightEstimate.cs" t="Include" />
-                  <e p="ARPlaneAnchor.cs" t="Include" />
-                  <e p="ARPlaneAnchorAlignment.cs" t="Include" />
-                  <e p="ARPoint.cs" t="Include" />
-                  <e p="ARRect.cs" t="Include" />
-                  <e p="ARSize.cs" t="Include" />
-                  <e p="ARTextureHandles.cs" t="Include" />
-                  <e p="ARTrackingQuality.cs" t="Include" />
-                  <e p="ARTrackingState.cs" t="Include" />
-                  <e p="ARTrackingStateReason.cs" t="Include" />
-                  <e p="ARUserAnchor.cs" t="Include" />
-                  <e p="UnityARSessionNativeInterface.cs" t="Include" />
-                </e>
-              </e>
-            </e>
-          </e>
-          <e p="UnityARKitPluginSettings.cs" t="Include" />
-        </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
@@ -1057,6 +699,6 @@
       <e p="WPAM-Zombie-Unity.sln" t="IncludeFlat" />
     </e>
     <e p="C:\Users\Artur\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Artur\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_WPAM-Zombie-Unity.1863615769.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Artur\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_WPAM-Zombie-Unity.-504128220.00" t="ExcludeRecursive" />
   </component>
 </project>

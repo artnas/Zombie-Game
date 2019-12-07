@@ -375,7 +375,7 @@ namespace Mapbox.Unity.MeshGeneration.Factories
 		{
 			var nameList = new List<string>();
 			var builderList = new List<LayerVisualizerBase>();
-
+			
 			foreach (var layerName in tile.VectorData.Data.LayerNames())
 			{
 				if (_layerBuilder.ContainsKey(layerName))

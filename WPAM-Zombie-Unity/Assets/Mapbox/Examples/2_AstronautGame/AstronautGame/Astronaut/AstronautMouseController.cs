@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using Mapbox.Unity.Map;
 
@@ -14,6 +16,9 @@ namespace Mapbox.Examples
 		float characterSpeed;
 		[SerializeField]
 		Animator characterAnimator;
+
+		private PlayerCharacter _playerCharacter;
+		public Animation animation;
 
 		[Header("References")]
 		[SerializeField]
@@ -36,12 +41,13 @@ namespace Mapbox.Examples
 		RaycastHit hit;
 		LayerMask raycastPlane;
 		float clicktime;
-		bool moving;
 		bool characterDisabled;
 
 		void Start()
 		{
+			_playerCharacter = GetComponent<PlayerCharacter>();
 			characterAnimator = GetComponentInChildren<Animator>();
+			animation = GetComponentInChildren<Animation>();
 			if (!Application.isEditor)
 			{
 				this.enabled = false;
@@ -85,18 +91,18 @@ namespace Mapbox.Examples
 			}
 		}
 
-		#region Character : Movement
+#region Character : Movement
 		List<Vector3> futurePositions;
 		bool interruption;
 		void GetPositions(List<Vector3> vecs)
 		{
 			futurePositions = vecs;
 
-			if (futurePositions != null && moving)
+			if (futurePositions != null && _playerCharacter.IsMoving)
 			{
 				interruption = true;
 			}
-			if (!moving)
+			if (!_playerCharacter.IsMoving)
 			{
 				interruption = false;
 				MoveToNextPlace();
@@ -111,14 +117,14 @@ namespace Mapbox.Examples
 				nextPos = futurePositions[0];
 				futurePositions.Remove(nextPos);
 
-				moving = true;
-				characterAnimator.SetBool("IsWalking", true);
+				_playerCharacter.IsMoving = true;
+				animation.Play("Player-Gun-Walk");
 				StartCoroutine(MoveTo());
 			}
 			else if (futurePositions.Count <= 0)
 			{
-				moving = false;
-				characterAnimator.SetBool("IsWalking", false);
+				_playerCharacter.IsMoving = false;
+				animation.Play("Player-Gun-Idle");
 			}
 		}
 
@@ -192,7 +198,7 @@ namespace Mapbox.Examples
 		public void DisableCharacter()
 		{
 			characterDisabled = true;
-			moving = false;
+			_playerCharacter.IsMoving = false;
 			StopAllCoroutines();
 			character.SetActive(false);
 		}

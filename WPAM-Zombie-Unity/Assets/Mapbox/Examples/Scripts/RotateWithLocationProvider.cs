@@ -96,6 +96,10 @@ namespace Mapbox.Examples
 
 		void LocationProvider_OnLocationUpdated(Location location)
 		{
+			//
+			// Debug.Log($"Orientation: {location.DeviceOrientation}, User heading: {location.UserHeading}");
+			// Debug.Log($"Position: {location.LatitudeLongitude}");
+			// Debug.Log($"Satellites used: {location.SatellitesUsed}/{location.SatellitesInView}");
 
 			float rotationAngle = _useDeviceOrientation ? location.DeviceOrientation : location.UserHeading;
 

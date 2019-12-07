@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Active: 1
   _spawnRateInSquareMeters: 5
-  _maxSpawn: 1000
+  _maxSpawn: 500
   _prefabs:
   - {fileID: 5116389372487262836, guid: 35d59c10156d1d34381a60b4a499ecab, type: 3}
   - {fileID: 6630358636294436505, guid: f0f92ce0cefa9ae47b8cb961c3eccd21, type: 3}
@@ -23,4 +23,4 @@ MonoBehaviour:
     m_Bits: 512
   _scaleDownWithWorld: 1
   _randomizeScale: 1
-  _randomizeRotation: 1
+  _randomizeRotation: 0

@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -12,5 +13,5 @@ MonoBehaviour:
   m_Name: LocationRoadLoftModifier
   m_EditorClassIdentifier: 
   Active: 1
-  Slice: {fileID: 1161984165156050, guid: a89fda20d92b63e46ab2900a8e978041, type: 2}
+  Slice: {fileID: 1161984165156050, guid: a89fda20d92b63e46ab2900a8e978041, type: 3}
   _closeEdges: 0

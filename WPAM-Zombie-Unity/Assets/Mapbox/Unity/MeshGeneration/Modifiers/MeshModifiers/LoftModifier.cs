@@ -113,10 +113,16 @@ namespace Mapbox.Unity.MeshGeneration.Modifiers
 						edMag = ed.magnitude;
 						co = md.Vertices.Count;
 						norm = Vector3.Cross(vl[ind] - vl[ind + 1], vl[ind + _sliceCount] - vl[ind]).normalized;
-						md.Vertices.Add(vl[ind]);
-						md.Vertices.Add(vl[ind + 1]);
-						md.Vertices.Add(vl[ind + _sliceCount]);
-						md.Vertices.Add(vl[ind + _sliceCount + 1]);
+						
+						md.Vertices.Add(new Vector3(vl[ind].x, vl[ind].y / 4, vl[ind].z));
+						md.Vertices.Add(new Vector3(vl[ind + 1].x, vl[ind + 1].y / 4, vl[ind + 1].z));
+						md.Vertices.Add(new Vector3(vl[ind + _sliceCount].x, vl[ind + _sliceCount].y / 4, vl[ind + _sliceCount].z));
+						md.Vertices.Add(new Vector3(vl[ind + _sliceCount + 1].x, vl[ind + _sliceCount + 1].y / 4, vl[ind + _sliceCount + 1].z));
+						
+						// md.Vertices.Add(vl[ind]);
+						// md.Vertices.Add(vl[ind + 1]);
+						// md.Vertices.Add(vl[ind + _sliceCount]);
+						// md.Vertices.Add(vl[ind + _sliceCount + 1]);
 
 						h = (float)j / _sliceCount;
 

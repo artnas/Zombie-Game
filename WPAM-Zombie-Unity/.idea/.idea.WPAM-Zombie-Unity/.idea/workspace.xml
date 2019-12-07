@@ -1,33 +1,1057 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5cf4506-0f0f-48ef-a237-c183f164cfed" name="Default Changelist" comment="" />
+    <list default="true" id="b5cf4506-0f0f-48ef-a237-c183f164cfed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NavigationUtilities.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NavigationUtilities.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Path.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Path.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision/Scripts/ComputerVisionController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision/Scripts/ComputerVisionController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision/Scripts/EdgeDetector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision/Scripts/EdgeDetector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision/Scripts/TextureReader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision/Scripts/TextureReader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision/Scripts/TextureReaderApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision/Scripts/TextureReaderApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts/InstantPreviewInput.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts/InstantPreviewInput.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts/InstantPreviewManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts/InstantPreviewManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts/InstantPreviewTrackedPoseDriver.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts/InstantPreviewTrackedPoseDriver.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ARCoreBackgroundRenderer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ARCoreBackgroundRenderer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ARCoreSession.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ARCoreSession.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ARCoreSessionConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ARCoreSessionConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Anchor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Anchor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/AndroidPermissionsManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/AndroidPermissionsManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/AndroidPermissionsRequestResult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/AndroidPermissionsRequestResult.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/AnchorApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/AnchorApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiApkInstallStatusExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiApkInstallStatusExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiApkInstallationStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiApkInstallationStatus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiArStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiArStatus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiAvailability.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiAvailability.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiAvailabilityExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiAvailabilityExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiCameraMetadata.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiCameraMetadata.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiConstants.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiConstants.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiDisplayUvCoords.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiDisplayUvCoords.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiLightEstimateState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiLightEstimateState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiLightEstimateStateExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiLightEstimateStateExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiLightEstimationMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiLightEstimationMode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiPlaneFindingMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiPlaneFindingMode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiPoseData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiPoseData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiPrestoConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiPrestoConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiPrestoStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiPrestoStatus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiPrestoStatusExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiPrestoStatusExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackableType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackableType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackableTypeExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackableTypeExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackedPointOrientationMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackedPointOrientationMode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackedPointOrientationModeExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackedPointOrientationModeExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackingState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackingState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackingStateExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiTrackingStateExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiUpdateMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/ApiUpdateMode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/CameraApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/CameraApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/CameraMetadataApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/CameraMetadataApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/FrameApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/FrameApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/HitTestApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/HitTestApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/LightEstimateApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/LightEstimateApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/NativeSession.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/NativeSession.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/PlaneApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/PlaneApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/PointApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/PointApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/PointCloudApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/PointCloudApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/PoseApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/PoseApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/SessionApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/SessionApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/SessionConfigApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/SessionConfigApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/TrackableApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/TrackableApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/TrackableListApi.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Api/TrackableListApi.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ApkAvailabilityStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ApkAvailabilityStatus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ApkInstallationStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/ApkInstallationStatus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Async.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Async/WaitForTaskCompletionYieldInstruction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Async/WaitForTaskCompletionYieldInstruction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/AsyncTask.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/AsyncTask.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/CameraMetadataTag.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/CameraMetadataTag.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/CameraMetadataValue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/CameraMetadataValue.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Editor/ARCoreRequiredMenuItem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Editor/ARCoreRequiredMenuItem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Editor/BuildHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Editor/BuildHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/EnvironmentalLight.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/EnvironmentalLight.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Frame.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Frame.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/LightEstimate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/LightEstimate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/LightEstimateState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/LightEstimateState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Managers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Managers/LifecycleManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Managers/LifecycleManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Managers/TrackableManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Managers/TrackableManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/PointCloudPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/PointCloudPoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Session.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Session.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/SessionStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/SessionStatus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/SessionStatusExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/SessionStatusExtensions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Trackable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Trackable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHit.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableHitFlags.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableQueryFilter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackableQueryFilter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackedPlane.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackedPlane.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackedPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackedPoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackedPointOrientationMode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackedPointOrientationMode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackingState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/TrackingState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility/ARCoreProjectSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility/ARCoreProjectSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility/ARDebug.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility/ARDebug.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility/ConversionHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility/ConversionHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility/IntPtrEqualityComparer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility/IntPtrEqualityComparer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility/MarshalingHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Utility/MarshalingHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38592_49260_17_4x4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38592_49260_17_4x4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38592_49264_17_4x4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38592_49264_17_4x4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38592_49268_17_4x4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38592_49268_17_4x4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38596_49260_17_4x4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38596_49260_17_4x4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38596_49264_17_4x4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38596_49264_17_4x4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38596_49268_17_4x4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38596_49268_17_4x4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38600_49260_17_4x4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38600_49260_17_4x4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38600_49264_17_4x4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38600_49264_17_4x4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38600_49268_17_4x4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/DemoTiles/38600_49268_17_4x4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Editor/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Editor/Scripts/PropertyDrawers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Editor/Scripts/PropertyDrawers/LatLngDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Editor/Scripts/PropertyDrawers/LatLngDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/01_BasicExample.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/01_BasicExample.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/02_DynamicLoading.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/02_DynamicLoading.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/30_Fencing.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/30_Fencing.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scenes/BenchmarkRunner.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scenes/BenchmarkRunner.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scenes/LoadTimeScenario.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scenes/LoadTimeScenario.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scenes/PixelCountingScenario.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scenes/PixelCountingScenario.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scenes/SustainedFpsScenario.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scenes/SustainedFpsScenario.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/BenchmarkMapSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/BenchmarkMapSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/BenchmarkingScenario.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/BenchmarkingScenario.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/BenchmarkingScenarioRunner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/BenchmarkingScenarioRunner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/CircularMotion.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/CircularMotion.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/FramerateCalculator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/FramerateCalculator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/LoadTimeScenario.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/LoadTimeScenario.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/PixelCountingScenario.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/PixelCountingScenario.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/SustainedFpsScenario.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Benchmarking/Scripts/SustainedFpsScenario.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/KitchenSink.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/KitchenSink.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Blank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Blank.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-03.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-03.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-04.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-04.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-05.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-05.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-4x1-05.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-02.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-02.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-03.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-03.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Building-Roof-1x1-03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof1Unlit.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof1Unlit.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoof6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/BuildingRoofLod6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ColorUnlit.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ColorUnlit.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ColorWithSpecular.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ColorWithSpecular.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ColorWithSpecularLod.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ColorWithSpecularLod.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ElevatedGroundPlane.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ElevatedGroundPlane.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fencing.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fencing/FencedZone.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fencing/FencedZone.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fill1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fill1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fill2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fill2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fill3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fill3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fill4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fill4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fill5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Fill5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/GroundPlane.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/GroundPlane.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/GroundPlaneUnlit.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/GroundPlaneUnlit.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/IconDev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/IconDev.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/IconMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/IconMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building1Debug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building1Debug.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building1Emit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building1Emit.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building1Spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building1Spec.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building2Debug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building2Debug.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building2Emit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building2Emit.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building2Spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building2Spec.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building3Debug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building3Debug.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building3Emit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building3Emit.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building3Spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building3Spec.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building4Debug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building4Debug.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building4Emit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building4Emit.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building4Spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building4Spec.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building5Debug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building5Debug.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building5Emit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building5Emit.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building5Spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building5Spec.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building6Debug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building6Debug.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building6Emit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building6Emit.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building6Spec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Building6Spec.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall1Unlit.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall1Unlit.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWall6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallDebug.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallDebug.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallDebugLod.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallDebugLod.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallLod6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallUnlit.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/BuildingWallUnlit.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Nine_Slicing_Debug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/NineSlicing/Nine_Slicing_Debug.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Outline.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Outline.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ParkMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ParkMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/PlaceIdReplacement.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/PlaceIdReplacement.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ReplacementPrefab.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/ReplacementPrefab.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Road.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Road.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/RoadAndBuildingBorder.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/RoadAndBuildingBorder.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/RoadAndBuildingBorderUnlit.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/RoadAndBuildingBorderUnlit.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/RoadTexture-1x1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/RoadTexture-1x1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/RoadUnlit.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/RoadUnlit.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Sandstone-normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Sandstone-normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Sandstone.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Sandstone.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Sandstone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Sandstone.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/TileBorder.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/TileBorder.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/Circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/Circle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/CircleMask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/CircleMask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/LabelDot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/LabelDot.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/Line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/Line.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/MinimapRenderTexture.renderTexture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/MinimapRenderTexture.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/RectWithClose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/RectWithClose.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/RoundedRectMask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/RoundedRectMask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/UIOverlay.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/UIOverlay.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/UIOverlay.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/UI/UIOverlay.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Water.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/Water.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WaterUnlit.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WaterUnlit.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/BaseMapWorldspaceTextured.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/BaseMapWorldspaceTextured.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/BaseMapWorldspaceTexturedWater.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/BaseMapWorldspaceTexturedWater.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/Building.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/Building.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/BuildingWorldspaceTextured.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/BuildingWorldspaceTextured.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/Ground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/Ground.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/Road.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/Road.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/Water.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/Water.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/WorldspaceBuildings.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/WorldspaceBuildings.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/WorldspaceGround.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/WorldspaceGround.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/WorldspaceRoadBorders.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/WorldspaceRoadBorders.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/WorldspaceRoads.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/WorldspaceRoads.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/WorldspaceWater.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/WorldspaceTextured/WorldspaceWater.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/park.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Materials/park.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/BuildingTexturer.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/BuildingTexturer.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/CylinderPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/CylinderPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/AcUnit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/AcUnit.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/AcUnitController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/AcUnitController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/BlackMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/BlackMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/BlueMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/BlueMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/Flag.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/Flag.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/LargeCylinder.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/LargeCylinder.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/MediumSphere.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/MediumSphere.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/SmallCylinder.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Decorations/SmallCylinder.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/DirectionalLight.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/DirectionalLight.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/ErrorImage.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/ErrorImage.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Explosion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Explosion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/GroundPlane.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/GroundPlane.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/GroundPlaneLarge.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/GroundPlaneLarge.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/GroundPlaneSmall.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/GroundPlaneSmall.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Instructions.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Instructions.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Missile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Missile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/NameLabel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/NameLabel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/PillarPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/PillarPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Slider.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Prefabs/Slider.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/AdEventReportingExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/AdEventReportingExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/AddingComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/AddingComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/AdminAreaColoring.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/AdminAreaColoring.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ApiKeyChecker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ApiKeyChecker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ArCameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ArCameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BasicExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BasicExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingBorders.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingBorders.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingExploder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingExploder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingLabeller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingLabeller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingNames.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingNames.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingSquashing.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingSquashing.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingTexturer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingTexturer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingsOverRoads.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/BuildingsOverRoads.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/CameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/CameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/CameraDragController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/CameraDragController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/CameraFollower.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/CameraFollower.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/CustomZoom.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/CustomZoom.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/DayAndNight.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/DayAndNight.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/DynamicMapsService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/DynamicMapsService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/EightDirectionalController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/EightDirectionalController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/EmissionController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/EmissionController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ErrorHandling.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ErrorHandling.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ExampleDefaults.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ExampleDefaults.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ExampleErrors.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ExampleErrors.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Extruder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Extruder.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/FencingExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/FencingExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/FloatingOriginUpdater.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/FloatingOriginUpdater.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/FollowCameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/FollowCameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/GpsInterface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/GpsInterface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/InstructionsButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/InstructionsButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/KitchenSink.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/KitchenSink.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/KoreaLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/KoreaLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Label.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Label.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/LoadFailuresExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/LoadFailuresExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/LoadingBarController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/LoadingBarController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/LocationAuth.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/LocationAuth.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/LocationFollower.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/LocationFollower.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Lod.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Lod.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/LodController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/LodController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Minimap.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Minimap.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/MinimapExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/MinimapExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/MissileBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/MissileBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/NineSlicing.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/NineSlicing.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Parapets.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Parapets.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/PlayableLocationsExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/PlayableLocationsExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/PrefabReplacement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/PrefabReplacement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/RoadBorders.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/RoadBorders.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/RoadLabeller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/RoadLabeller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/RoadNames.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/RoadNames.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/RoadWidths.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/RoadWidths.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/SearchByPlaceId.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/SearchByPlaceId.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ShaderController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ShaderController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/SliderController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/SliderController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Squasher.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/Squasher.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/SunAndMoonController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/SunAndMoonController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/TangentLooker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/TangentLooker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/TouchCameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/TouchCameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/WorldspaceTexturingExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/WorldspaceTexturingExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ZoomController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Examples/Scripts/ZoomController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/BaseMapColor.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/BaseMapColor.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/BaseMapColorUnlit.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/BaseMapColorUnlit.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/BaseMapTextured.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/BaseMapTextured.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/BaseMapTexturedUnlit.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/BaseMapTexturedUnlit.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/GoogleMapsShaderLib.cginc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/GoogleMapsShaderLib.cginc.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/MuskStandard.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Materials/MuskStandard.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/Android.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/Android/locationauth.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/Android/locationauth.jar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/Google.Maps.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/Google.Maps.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/Google.Maps.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/Google.Maps.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/Google.Protobuf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/Google.Protobuf.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/iOS.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/iOS/MuskLocaleUtil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/iOS/MuskLocaleUtil.h.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/iOS/MuskLocaleUtil.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/iOS/MuskLocaleUtil.m.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/iOS/MuskLocationAuth.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Plugins/iOS/MuskLocationAuth.a.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Scripts/DeviceCountryProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Scripts/DeviceCountryProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Scripts/DeviceLocationSignalProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMaps/Scripts/DeviceLocationSignalProvider.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Building/BuildingSideMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Building/BuildingSideMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Building/BuildingTopMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Building/BuildingTopMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/LocationGameSpawnRuinsModifier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/LocationGameSpawnRuinsModifier.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/LocationGameSpawnTreeModifier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/LocationGameSpawnTreeModifier.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/ParkMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/ParkMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/RuinsMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/RuinsMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Road/LocationRoadLoftModifier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Road/LocationRoadLoftModifier.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Road/RoadMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Road/RoadMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/Resources/TerrainMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/Resources/TerrainMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/RotateWithLocationProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/RotateWithLocationProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Unity/Map/AbstractMapVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Unity/Map/AbstractMapVisualizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Factories/VectorTileFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Factories/VectorTileFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/LayerVisualizers/VectorLayerVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/LayerVisualizers/VectorLayerVisualizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/LoftModifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/LoftModifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARPrerequisiteInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARPrerequisiteInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts/ARPlaneHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts/ARPlaneHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts/ARTableTopCameraMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts/ARTableTopCameraMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts/PlaceMapOnARPlane.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts/PlaceMapOnARPlane.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts/SnapMapToTargetTransform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts/SnapMapToTargetTransform.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts/UpdateShaderCoordinatesByARPlane.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Examples/ARTabletop/Scripts/UpdateShaderCoordinatesByARPlane.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/Camera.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/Camera/ManualTouchCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/Camera/ManualTouchCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/Camera/TouchCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/Camera/TouchCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/ManualSync.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/ManualSync/FollowTargetTransform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/ManualSync/FollowTargetTransform.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/ManualSync/RelocateMapByGPS.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/ManualSync/RelocateMapByGPS.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/ManualSync/RotateOnYTargetTransform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/ManualSync/RotateOnYTargetTransform.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/ManualSync/UpdateMapPosByARPlaneY.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/ManualSync/UpdateMapPosByARPlaneY.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/PlayerSizeFromLocationAccuracy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Scripts/PlayerSizeFromLocationAccuracy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/AbstractAlignmentStrategy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/AbstractAlignmentStrategy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/AverageHeadingAlignmentStrategy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/AverageHeadingAlignmentStrategy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/Editor/Tests.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/Editor/Tests/MapboxUnitTests_AverageHeadingAlignmentStrategy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/Editor/Tests/MapboxUnitTests_AverageHeadingAlignmentStrategy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/ISynchronizationContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/ISynchronizationContext.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/LerpAlignmentStrategy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/LerpAlignmentStrategy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/ManualSynchronizationContextBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/ManualSynchronizationContextBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/SimpleAutomaticSynchronizationContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/SimpleAutomaticSynchronizationContext.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/SimpleAutomaticSynchronizationContextBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/SimpleAutomaticSynchronizationContextBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/SnapAlignmentStrategy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/SnapAlignmentStrategy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/Utilities.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/Utilities/PlotRoute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MapboxAR/Unity/Ar/Utilities/PlotRoute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/ARRemote.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/ARRemote/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/ARRemote/Scripts/ARRemoteDevice.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/ARRemote/Scripts/ARRemoteDevice.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/ARRemote/Scripts/ARRemoteEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/ARRemote/Scripts/ARRemoteEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/ARRemote/Scripts/ARRemoteEditorInterface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/ARRemote/Scripts/ARRemoteEditorInterface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/ARRemote/Scripts/ARSerializableObjects.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/ARRemote/Scripts/ARSerializableObjects.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/ARFocusSquare.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/ARFocusSquare/ARFocusSquare.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/ARFocusSquare/ARFocusSquare.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/DemoGUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/DemoGUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/MatchingScalePicker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/MatchingScalePicker.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/ObjectShooter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/ObjectShooter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/OptionsGUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/OptionsGUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/PlaceOnPlane.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/PlaceOnPlane.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/RemoveRigidbody.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Examples/Scripts/RemoveRigidbody.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARAnchor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARAnchor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARCoreInterface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARCoreInterface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/AREditorInterface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/AREditorInterface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARInterface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARInterface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARKitInterface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARKitInterface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARLightEstimate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARLightEstimate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARMessageIds.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARMessageIds.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARPlaneVisualizer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARPlaneVisualizer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARPointCloudVisualizer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/ARPointCloudVisualizer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/BoundedPlane.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARInterface/Scripts/BoundedPlane.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/ARKitRemoteConnection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/ARKitRemoteConnection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/ConnectToEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/ConnectToEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/ConnectionMessageIds.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/ConnectionMessageIds.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/EditorHitTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/EditorHitTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/ObjectSerializationExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/ObjectSerializationExtension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/SerializableObjects.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/SerializableObjects.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/UnityRemoteVideo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/ARKitRemote/UnityRemoteVideo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples/AddRemoveAnchorExample.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples/AddRemoveAnchorExample/UnityARUserAnchorExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples/AddRemoveAnchorExample/UnityARUserAnchorExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples/Common.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples/Common/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples/Common/Materials/ZColor.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples/Common/Materials/ZColor.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples/FocusSquare.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples/FocusSquare/FocusSquare.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Examples/FocusSquare/FocusSquare.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Editor/UnityARBuildPostprocessor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Editor/UnityARBuildPostprocessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/AR3DOFCameraManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/AR3DOFCameraManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/ARPlaneAnchorGameObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/ARPlaneAnchorGameObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/DontDestroyOnLoad.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/DontDestroyOnLoad.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/PointCloudParticleExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/PointCloudParticleExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARAmbient.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARAmbient.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARAnchorManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARAnchorManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARCameraManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARCameraManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARCameraNearFar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARCameraNearFar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARGeneratePlane.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARGeneratePlane.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARHitTestExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARHitTestExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARKitControl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARKitControl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARKitLightManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARKitLightManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARMatrixOps.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARMatrixOps.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARUserAnchorComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARUserAnchorComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARUtility.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARUtility.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARVideo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityARVideo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityPointCloudExample.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/Helpers/UnityPointCloudExample.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARAnchor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARAnchor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARErrorCode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARErrorCode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARFaceAnchor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARFaceAnchor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARFrame.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARFrame.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARHitTestResult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARHitTestResult.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARHitTestResultType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARHitTestResultType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARLightEstimate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARLightEstimate.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARPlaneAnchor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARPlaneAnchor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARPlaneAnchorAlignment.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARPlaneAnchorAlignment.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARPoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARRect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARRect.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARSize.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARSize.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTextureHandles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTextureHandles.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTrackingQuality.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTrackingQuality.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTrackingState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTrackingState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTrackingStateReason.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARTrackingStateReason.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARUserAnchor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/ARUserAnchor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/UnityARSessionNativeInterface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/Plugins/iOS/UnityARKit/NativeInterface/UnityARSessionNativeInterface.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/UnityARKitPluginSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UnityARKitPlugin/UnityARKitPluginSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts/InstantPreviewManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/LayerModifier.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Map/InitializeMapWithLocationProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/LocationProviderFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Map/TileProviders/AbstractTileProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/DataContainers/MapboxEnums.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/46C28768-88CA-4405-B893-CEA4E20D647F/b6/e0492486/VectorTileFeature.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Zombie.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Utils/Vector2d/RectD.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/DataContainers/TileJsonData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Factories/VectorDataFetcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Factories/VectorTileFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/LayerProperties/VectorLayerProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/LayerProperties/VectorSubLayerProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/LayerVisualizers/LocationPrefabsLayerVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Path.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Directions/Response/Route.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/SourceLayers/ITerrainLayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ReloadMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/SourceLayers/VectorLayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/LayerVisualizers/VectorLayerVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Interfaces/LayerVisualizerBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Directions/Response/DirectionsResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Directions/Directions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_TileJSON.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/TrafficUvAnimator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Data/UnityTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/LayerModifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Data/VectorFeatureUnity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_BboxToGeoCoordinateBoundsConverter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/RotateWithLocationProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Map/InitializeMapWithLocationProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautDirections.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Map/AbstractMapVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Map/MapVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NavigationUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/AbstractLocationProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Map/AbstractMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/SourceLayers/AbstractLayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/46C28768-88CA-4405-B893-CEA4E20D647F/03/b9d3e8da/VectorTile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_VectorTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/TransformLocationProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/46C28768-88CA-4405-B893-CEA4E20D647F/21/faabc45d/VectorTileLayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Imported/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/DeviceLocationProviderAndroidNative.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/SourceLayers/ILayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/LoftModifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/AbstractEditorLocationProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/LocationProviderFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Map/VectorTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/MeshGenerationBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/ModifierStackBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Utilities/VectorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIBar.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/GoogleARCore/SDK/Scripts/Editor/BuildHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/GoogleARCore/SDK/InstantPreview/Scripts/InstantPreviewManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Factories/VectorTileFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Unity/Map/AbstractMapVisualizer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/RotateWithLocationProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Data/VectorFeatureUnity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/LayerVisualizers/VectorLayerVisualizer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Path.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/LoftModifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautDirections.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NavigationUtilities.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1ScCi0TNGLp8aaLzyeRra9SG7gZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,6 +1092,10 @@
       <option name="presentableId" value="Default" />
       <updated>1571853620906</updated>
       <workItem from="1571853625187" duration="2569000" />
+      <workItem from="1575119874471" duration="25457000" />
+      <workItem from="1575305277895" duration="5063000" />
+      <workItem from="1575377268516" duration="1074000" />
+      <workItem from="1575731123627" duration="4313000" />
     </task>
     <servers />
   </component>
@@ -76,6 +1104,19 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>

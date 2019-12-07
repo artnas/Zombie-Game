@@ -9,10 +9,13 @@ namespace Mapbox.Examples
 		public Material[] Materials;
 		public Transform Target;
 		public Animator CharacterAnimator;
+		public Animation Animation;
 		public float Speed;
 		AstronautMouseController _controller;
+		private PlayerCharacter _playerCharacter;
 		void Start()
 		{
+			_playerCharacter = GetComponent<PlayerCharacter>();
 			_controller = GetComponent<AstronautMouseController>();
 		}
 
@@ -32,13 +35,19 @@ namespace Mapbox.Examples
 			var distance = Vector3.Distance(transform.position, Target.position);
 			if (distance > 0.1f)
 			{
-				transform.LookAt(Target.position);
-				transform.Translate(Vector3.forward * Speed);
-				CharacterAnimator.SetBool("IsWalking", true);
+				// transform.LookAt(Target.position);
+				// transform.Translate(Vector3.forward * Speed);
+				// CharacterAnimator.SetBool("IsWalking", true);
+				_playerCharacter.IsMoving = true;
+				Animation.Play("Player-Gun-Walk");
 			}
 			else
 			{
-				CharacterAnimator.SetBool("IsWalking", false);
+				// var currentClipName = Animation.clip.name;
+				// Debug.Log(currentClipName);
+				// // CharacterAnimator.SetBool("IsWalking", false);
+				_playerCharacter.IsMoving = false;
+				Animation.Play("Player-Gun-Idle");
 			}
 		}
 	}
