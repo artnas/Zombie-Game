@@ -23,6 +23,24 @@
             </e>
           </e>
         </e>
+        <e p="Kino" t="Include">
+          <e p="Obscurance" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ObscuranceEditor.cs" t="Include" />
+            </e>
+            <e p="Obscurance.cs" t="Include" />
+            <e p="Script" t="Include">
+              <e p="PropertyObserver.cs" t="Include" />
+            </e>
+            <e p="Shader" t="Include">
+              <e p="Common.cginc" t="Include" />
+              <e p="Composition.cginc" t="Include" />
+              <e p="Obscurance.cginc" t="Include" />
+              <e p="Obscurance.shader" t="Include" />
+              <e p="SeparableBlur.cginc" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Mapbox" t="Include">
           <e p="Core" t="Include">
             <e p="cheap-ruler-cs" t="Include">

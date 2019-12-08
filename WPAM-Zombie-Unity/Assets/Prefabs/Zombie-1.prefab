@@ -231,11 +231,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ebd0271dab14e418d282773b7e4bb95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsDebug: 0
   IsAlive: 1
+  OriginRoad:
+    Points: []
+    TotalLength: 0
   IsFollowingPlayer: 0
   Animation: {fileID: 0}
   VisionRadiusTransform: {fileID: 0}
-  VisionRadius: 100
+  DespawnRadius: 80
+  VisionRadius: 15
+  RunAtPlayerRadius: 9
 --- !u!111 &1765074506988048186
 Animation:
   m_ObjectHideFlags: 0

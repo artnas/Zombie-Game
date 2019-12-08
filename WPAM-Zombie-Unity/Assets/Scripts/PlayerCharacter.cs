@@ -50,7 +50,7 @@ public class PlayerCharacter : MonoBehaviour
     
 #region Shooting
 
-    private float shootingRange = 20;
+    private float shootingRange = 7;
     private float shootingInterval = 1f;
     private float lastShotTime = 0;
 

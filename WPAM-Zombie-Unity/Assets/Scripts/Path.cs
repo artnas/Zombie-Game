@@ -4,12 +4,13 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
+    [System.Serializable]
     public class Path
     {
-        public readonly List<Vector3> Points;
+        public List<Vector3> Points;
         public readonly UnityTile Tile;
 
-        public readonly float TotalLength = 0;
+        public float TotalLength = 0;
 
         public Path(List<Vector3> points, UnityTile tile)
         {
@@ -69,6 +70,36 @@ namespace DefaultNamespace
         public Vector3 GetRandomPoint()
         {
             return Points[Random.Range(0, Points.Count)];
+        }
+
+        public void Simplify()
+        {
+            var newPath = new List<Vector3>(Points.Count);
+            var distanceThreshold = 2f;
+
+            for (var i = 0; i < Points.Count; i++)
+            {
+                var currentPoint = Points[i];
+                var mergedPoint = currentPoint;
+
+                for (var j = i; j < Points.Count; j++)
+                {
+                    var pointToCheck = Points[j];
+
+                    var distance = Vector3.Distance(mergedPoint, pointToCheck);
+
+                    if (distance < distanceThreshold)
+                    {
+                        mergedPoint = (mergedPoint + pointToCheck) / 2;
+                        Points.RemoveAt(j);
+                    }
+                }
+
+                newPath.Add(mergedPoint);
+            }
+
+            Points = newPath;
+            TotalLength = CalculateTotalLength();
         }
 
         public void DebugDraw()

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Mapbox.Map;
 using Mapbox.Unity.Map;
 using Mapbox.Unity.MeshGeneration.Data;
 using Mapbox.VectorTile.Geometry;
@@ -93,7 +94,7 @@ namespace DefaultNamespace
 
             foreach (var road in roads)
             {
-                if (road.TotalLength >= minLength && !IsPathUsedByZombie(road))
+                if (road.Points.Count > 1 && road.TotalLength >= minLength && !IsPathUsedByZombie(road))
                 {
                     var distance = Vector3.Distance(road.GetRandomPoint(), PlayerCharacter.Instance.transform.position);
                     if (distance >= rangeFromPlayer.x && distance <= rangeFromPlayer.y)

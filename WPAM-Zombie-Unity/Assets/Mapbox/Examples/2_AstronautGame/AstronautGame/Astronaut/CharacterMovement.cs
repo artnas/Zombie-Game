@@ -6,7 +6,7 @@ namespace Mapbox.Examples
 {
 	public class CharacterMovement : MonoBehaviour
 	{
-		public Material[] Materials;
+		// public Material[] Materials;
 		public Transform Target;
 		public Animator CharacterAnimator;
 		public Animation Animation;
@@ -27,16 +27,16 @@ namespace Mapbox.Examples
 				return;
 			}
 
-			foreach (var item in Materials)
-			{
-				item.SetVector("_CharacterPosition", transform.position);
-			}
+			// foreach (var item in Materials)
+			// {
+			// 	item.SetVector("_CharacterPosition", transform.position);
+			// }
 
 			var distance = Vector3.Distance(transform.position, Target.position);
 			if (distance > 0.1f)
 			{
-				// transform.LookAt(Target.position);
-				// transform.Translate(Vector3.forward * Speed);
+				transform.LookAt(Target.position);
+				transform.Translate(Vector3.forward * (Speed * Time.deltaTime));
 				// CharacterAnimator.SetBool("IsWalking", true);
 				_playerCharacter.IsMoving = true;
 				Animation.Play("Player-Gun-Walk");

@@ -72,7 +72,8 @@ namespace Mapbox.Unity.MeshGeneration.Modifiers
 					transform.position = hit.point;
 					if (_randomizeRotation)
 					{
-						transform.localEulerAngles = new Vector3(0, UnityEngine.Random.Range(-180f, 180f), 0);
+						// transform.localEulerAngles = new Vector3(0, UnityEngine.Random.Range(-180f, 180f), 0);
+						transform.localEulerAngles = new Vector3(0, UnityEngine.Random.Range(0, 4) * 90, 0);
 					}
 					if (!_scaleDownWithWorld)
 					{
@@ -82,11 +83,16 @@ namespace Mapbox.Unity.MeshGeneration.Modifiers
 					if (_randomizeScale)
 					{
 						var scale = transform.localScale;
-						var y = UnityEngine.Random.Range(scale.y * .7f, scale.y * 1.3f);
+						var y = UnityEngine.Random.Range(scale.y * .9f, scale.y * 1.1f);
 						scale.y = y;
 						transform.localScale = scale;
 					}
 
+					// transform.gameObject.isStatic = true;
+					// foreach (Transform child in transform)
+					// {
+					// 	child.gameObject.isStatic = true;
+					// }
 				}
 				_spawnedCount++;
 			}

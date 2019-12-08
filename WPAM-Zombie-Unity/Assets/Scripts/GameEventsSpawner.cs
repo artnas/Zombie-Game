@@ -12,8 +12,8 @@ namespace DefaultNamespace
         private Coroutine _behaviourCoroutine;
 
         public GameObject ZombiePrefab;
-        private Vector2 _zombieSpawnRadiusRange = new Vector2(30, 40);
-        private int _zombiesCountLimit = 20;
+        private Vector2 _zombieSpawnRadiusRange = new Vector2(40, 60);
+        public int MaxZombiesCount = 5;
 
         private void Start()
         {
@@ -54,10 +54,10 @@ namespace DefaultNamespace
         private bool TrySpawnZombie()
         {
             if (GameManager.Instance.Roads.Count > 0 &&
-                GameManager.Instance.Zombies.Count < _zombiesCountLimit)
+                GameManager.Instance.Zombies.Count < MaxZombiesCount)
             {
                 var playerPosition = PlayerCharacter.Instance.transform.position;
-                var randomRoad = GameManager.Instance.GetRoadSuitableForNewZombie(3, _zombieSpawnRadiusRange);
+                var randomRoad = GameManager.Instance.GetRoadSuitableForNewZombie(10, _zombieSpawnRadiusRange);
 
                 var spawnedGameObject = Instantiate(ZombiePrefab, randomRoad.GetRandomPoint(), Quaternion.identity);
                 var spawnedZombie = spawnedGameObject.GetComponent<Zombie>();
