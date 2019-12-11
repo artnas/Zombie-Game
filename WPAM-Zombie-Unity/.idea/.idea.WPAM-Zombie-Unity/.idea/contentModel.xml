@@ -690,13 +690,24 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Enemy" t="Include">
+            <e p="States" t="Include">
+              <e p="FollowPath.cs" t="Include" />
+              <e p="FollowPlayer.cs" t="Include" />
+              <e p="Idle.cs" t="Include" />
+              <e p="PatrolPath.cs" t="Include" />
+              <e p="RunAtPlayer.cs" t="Include" />
+              <e p="ZombieState.cs" t="Include" />
+            </e>
+            <e p="Zombie.cs" t="Include" />
+            <e p="ZombieUtilities.cs" t="Include" />
+          </e>
           <e p="GameEventsSpawner.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="NavigationUtilities.cs" t="Include" />
           <e p="Path.cs" t="Include" />
           <e p="PlayerCharacter.cs" t="Include" />
           <e p="UIBar.cs" t="Include" />
-          <e p="Zombie.cs" t="Include" />
         </e>
         <e p="ThirdPartyAssets" t="Include">
           <e p="WoLfulus" t="Include">

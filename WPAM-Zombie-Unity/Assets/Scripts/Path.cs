@@ -72,6 +72,27 @@ namespace DefaultNamespace
             return Points[Random.Range(0, Points.Count)];
         }
 
+        public (int, Vector3) GetClosestNode(Vector3 position)
+        {
+            var resultIndex = -1;
+            var resultPosition = Vector3.zero;
+            
+            var minDistance = float.MaxValue;
+            for (var i = 0; i < Points.Count; i++)
+            {
+                var distanceToPoint = Vector3.Distance(position, Points[i]);
+
+                if (distanceToPoint < minDistance)
+                {
+                    minDistance = distanceToPoint;
+                    resultIndex = i;
+                    resultPosition = Points[i];
+                }
+            }
+
+            return (resultIndex, resultPosition);
+        }
+
         public void Simplify()
         {
             var newPath = new List<Vector3>(Points.Count);
@@ -104,14 +125,14 @@ namespace DefaultNamespace
 
         public void DebugDraw()
         {
+            if (Points == null || Points.Count <= 0) return;
+            
             var lastPoint = Points[0];
 
-            for (var i = 1; i < 10; i++)
+            for (var i = 1; i < Points.Count; i++)
             {
-                var currentPoint = GetInterpolatedPoint(i / 10f);
-
+                var currentPoint = Points[i];
                 Debug.DrawLine(lastPoint, currentPoint, Color.blue);
-
                 lastPoint = currentPoint;
             }
         }

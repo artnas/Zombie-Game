@@ -23,5 +23,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   _scaleDownWithWorld: 1
-  _randomizeScale: 0
+  _randomizeScale: 1
   _randomizeRotation: 1

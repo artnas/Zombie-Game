@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
+using Enemy;
 using UnityEngine;
 
 public class PlayerCharacter : MonoBehaviour
@@ -64,7 +65,7 @@ public class PlayerCharacter : MonoBehaviour
         var fromToVector = rotation * Vector3.forward;
 
         _shootLineRenderer.gameObject.SetActive(true);
-        _shootLineRenderer.SetPositions(new Vector3[]{transform.position + Vector3.up * 4f + fromToVector * 2, zombie.transform.position + Vector3.up * 4f});
+        _shootLineRenderer.SetPositions(new[]{transform.position + Vector3.up * 4f + fromToVector * 2, zombie.transform.position + Vector3.up * 4f});
         
         yield return new WaitForSeconds(0.1f);
 

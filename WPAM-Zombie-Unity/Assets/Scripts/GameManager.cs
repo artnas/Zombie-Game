@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Enemy;
 using Mapbox.Map;
 using Mapbox.Unity.Map;
 using Mapbox.Unity.MeshGeneration.Data;
@@ -96,8 +97,21 @@ namespace DefaultNamespace
             {
                 if (road.Points.Count > 1 && road.TotalLength >= minLength && !IsPathUsedByZombie(road))
                 {
-                    var distance = Vector3.Distance(road.GetRandomPoint(), PlayerCharacter.Instance.transform.position);
-                    if (distance >= rangeFromPlayer.x && distance <= rangeFromPlayer.y)
+                    var roadIsInRange = true;
+                    
+                    for (var i = 0; i < 5; i++)
+                    {
+                        var interpolatedPoint = road.GetInterpolatedPoint(i / 5f);
+                        
+                        var distance = Vector3.Distance(interpolatedPoint, PlayerCharacter.Instance.transform.position);
+                        if (distance < rangeFromPlayer.x || distance > rangeFromPlayer.y)
+                        {
+                            roadIsInRange = false;
+                            break;
+                        }
+                    }
+
+                    if (roadIsInRange)
                     {
                         return road;
                     }

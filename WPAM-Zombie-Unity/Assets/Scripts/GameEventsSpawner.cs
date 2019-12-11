@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Enemy;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -56,7 +57,7 @@ namespace DefaultNamespace
             if (GameManager.Instance.Roads.Count > 0 &&
                 GameManager.Instance.Zombies.Count < MaxZombiesCount)
             {
-                var playerPosition = PlayerCharacter.Instance.transform.position;
+                // var playerPosition = PlayerCharacter.Instance.transform.position;
                 var randomRoad = GameManager.Instance.GetRoadSuitableForNewZombie(10, _zombieSpawnRadiusRange);
 
                 var spawnedGameObject = Instantiate(ZombiePrefab, randomRoad.GetRandomPoint(), Quaternion.identity);
