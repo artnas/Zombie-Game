@@ -5,6 +5,7 @@ using System.Linq;
 using DefaultNamespace;
 using Enemy.States;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Enemy
 {
@@ -29,6 +30,8 @@ namespace Enemy
 
         private Dictionary<string, ZombieState> _states;
         public ZombieState CurrentState;
+
+        public GameObject DeathParticlesPrefab;
         
         public void Start()
         {
@@ -103,7 +106,16 @@ namespace Enemy
         private IEnumerator Death()
         {
             Animation.Play("Zombie-1-Death");
+            
+            if (Random.value < 0.25f)
+            {
+                GameManager.Instance.SpawnRandomItem(transform.position);
+            }
+            
             yield return new WaitForSeconds(0.5f);
+
+            Instantiate(DeathParticlesPrefab, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
         }
 

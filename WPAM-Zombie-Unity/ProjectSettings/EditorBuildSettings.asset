@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity
     guid: 23b3522d4f6fa450eb781397db4b26ed
+  - enabled: 1
+    path: Assets/Scenes/DeathScreen.unity
+    guid: 8a74fc8e725817641bbcfb9e6aa7668f
   m_configObjects: {}

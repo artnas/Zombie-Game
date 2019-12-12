@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿using DefaultNamespace;
+using UnityEngine;
 
 namespace Enemy.States
 {
     public class RunAtPlayer : ZombieState
     {
         private bool _isQueryInProgress = false;
+        private float _lastAttackTime;
+        private readonly float _attackInterval = 2f;
         
         public RunAtPlayer(Zombie zombie) : base(zombie)
         {
@@ -33,9 +36,16 @@ namespace Enemy.States
                 }
             } else if (distance < 2f)
             {
-                // atak?
-                
-                Debug.Log("TODO Attack");
+                if (Time.time - _lastAttackTime > _attackInterval)
+                {
+                    _lastAttackTime = Time.time;
+                    GameManager.Instance.GameState.Player.Health--;
+
+                    if (GameManager.Instance.GameState.Player.Health <= 0)
+                    {
+                        GameUtilities.EndGame("Zostałeś zabity przez zombie.");
+                    }
+                }
             }
             else
             {

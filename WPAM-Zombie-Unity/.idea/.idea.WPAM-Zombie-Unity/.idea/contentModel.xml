@@ -690,6 +690,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="BaseBuilder.cs" t="Include" />
+          <e p="DeathScreen.cs" t="Include" />
           <e p="Enemy" t="Include">
             <e p="States" t="Include">
               <e p="FollowPath.cs" t="Include" />
@@ -704,10 +706,23 @@
           </e>
           <e p="GameEventsSpawner.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="GameUtilities.cs" t="Include" />
+          <e p="Hideout.cs" t="Include" />
+          <e p="Item.cs" t="Include" />
+          <e p="ItemType.cs" t="Include" />
+          <e p="Models" t="Include">
+            <e p="MGameState.cs" t="Include" />
+            <e p="MHideout.cs" t="Include" />
+            <e p="MOutpost.cs" t="Include" />
+            <e p="MPlayer.cs" t="Include" />
+          </e>
           <e p="NavigationUtilities.cs" t="Include" />
+          <e p="Outpost.cs" t="Include" />
           <e p="Path.cs" t="Include" />
           <e p="PlayerCharacter.cs" t="Include" />
+          <e p="Turret.cs" t="Include" />
           <e p="UIBar.cs" t="Include" />
+          <e p="UISystem.cs" t="Include" />
         </e>
         <e p="ThirdPartyAssets" t="Include">
           <e p="WoLfulus" t="Include">

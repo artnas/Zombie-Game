@@ -74,7 +74,7 @@ namespace Mapbox.Examples
 				}
 			}
 
-			if (click)
+			if (click && !UISystem.Instance.EventSystem.IsPointerOverGameObject())
 			{
 				ray = cam.ScreenPointToRay(Input.mousePosition);
 

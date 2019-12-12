@@ -15,6 +15,9 @@ namespace DefaultNamespace
         public GameObject ZombiePrefab;
         private Vector2 _zombieSpawnRadiusRange = new Vector2(25, 60);
         public int MaxZombiesCount = 5;
+        
+        private Vector2 _itemSpawnRadiusRange = new Vector2(15, 45);
+        public int MaxItemsCount = 10;
 
         private void Start()
         {
@@ -80,6 +83,25 @@ namespace DefaultNamespace
         
         private bool TrySpawnItem()
         {
+            if (GameManager.Instance.Roads.Count > 0 &&
+                GameManager.Instance.Items.Count < MaxItemsCount)
+            {
+                var randomPosition = GameManager.Instance.GetRandomPositionForItemSpawn(_itemSpawnRadiusRange);
+                if (!randomPosition.HasValue)
+                {
+                    return false;
+                }
+                
+                if (GameManager.Instance.GetMinDistanceFromItems(randomPosition.Value) < 5)
+                {
+                    return false;
+                }
+
+                GameManager.Instance.SpawnRandomItem(randomPosition.Value);
+
+                return true;
+            }
+            
             return false;
         }
     }

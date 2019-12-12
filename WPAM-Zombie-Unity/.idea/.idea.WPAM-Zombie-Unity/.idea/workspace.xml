@@ -2,17 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5cf4506-0f0f-48ef-a237-c183f164cfed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BaseBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BaseBuilder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DeathScreen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DeathScreen.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameUtilities.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameUtilities.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hideout.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hideout.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Item.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/MGameState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/MGameState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/MHideout.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/MHideout.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/MOutpost.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/MOutpost.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/MPlayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Models/MPlayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Outpost.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Outpost.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Turret.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Turret.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UISystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UISystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombie-1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombie-1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/RunAtPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/RunAtPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Noise.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Noise.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Radius.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Radius.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +51,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/MHideout.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Map/TileProviders/AbstractTileProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0FB38736-02AD-4F16-A30D-E8CE8E1A6F6D/a0/a34659f7/ValueTuple`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/DataContainers/MapboxEnums.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,13 +64,18 @@
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/DataContainers/TileJsonData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Factories/VectorDataFetcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/MOutpost.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Factories/VectorTileFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DeathScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/LayerProperties/VectorLayerProperties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/ZombieUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/LayerProperties/VectorSubLayerProperties.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/MGameState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/LayerVisualizers/LocationPrefabsLayerVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UISystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Path.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Directions/Response/Route.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/SourceLayers/ITerrainLayer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,17 +85,21 @@
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Interfaces/LayerVisualizerBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0FB38736-02AD-4F16-A30D-E8CE8E1A6F6D/36/35b73436/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Directions/Response/DirectionsResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/MPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/States/Idle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/SpawnInsideModifier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Directions/Directions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_TileJSON.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Imported/IngameDebugConsole/Android.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/LocationStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/TrafficUvAnimator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/States/RunAtPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Data/UnityTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/LayerModifier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/States/ZombieState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Data/VectorFeatureUnity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_BboxToGeoCoordinateBoundsConverter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -94,11 +131,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/LocationProviderFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Map/VectorTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hideout.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Turret.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Outpost.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/States/PatrolPath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/MeshGenerationBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/ModifierStackBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Utilities/VectorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseBuilder.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -129,14 +170,28 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Path.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/Idle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/RunAtPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" />
         <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/MGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/MGameState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/MOutpost.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Outpost.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hideout.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/MHideout.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Models/MPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BaseBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UISystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Turret.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ItemType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DeathScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/RunAtPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUtilities.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -196,7 +251,7 @@
       <workItem from="1575731123627" duration="16839000" />
       <workItem from="1575816300579" duration="7322000" />
       <workItem from="1576077768847" duration="12928000" />
-      <workItem from="1576165766055" duration="3382000" />
+      <workItem from="1576165766055" duration="22167000" />
     </task>
     <task id="LOCAL-00001" summary="7-12-2019">
       <created>1575735691475</created>
@@ -226,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576091466715</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="12-12-2019">
+      <created>1576169189366</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576169189366</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +315,8 @@
     <MESSAGE value="Commit unversioned files" />
     <MESSAGE value="8-12-2019" />
     <MESSAGE value="11-12-2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="11-12-2019" />
+    <MESSAGE value="12-12-2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="12-12-2019" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

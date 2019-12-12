@@ -242,6 +242,8 @@ MonoBehaviour:
   DespawnRadius: 80
   VisionRadius: 15
   RunAtPlayerRadius: 9
+  DeathParticlesPrefab: {fileID: 7515415409777993819, guid: 57e0cb309609923488759b8481d8246f,
+    type: 3}
 --- !u!111 &1765074506988048186
 Animation:
   m_ObjectHideFlags: 0

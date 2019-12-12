@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
+using DefaultNamespace.Models;
 using Enemy;
 using UnityEngine;
 
@@ -17,6 +18,7 @@ public class PlayerCharacter : MonoBehaviour
 
     public bool CanShoot = true;
     public bool IsMoving = false;
+    public bool IsNearHideout = false;
 
     private Transform _cameraTransform;
     private Vector3 _cameraOffset;
@@ -39,11 +41,15 @@ public class PlayerCharacter : MonoBehaviour
     void Update()
     {
         _cameraTransform.transform.position = transform.position + _cameraOffset;
+        if (GameManager.Instance.BaseBuilder.HideoutInstance)
+        {
+            CheckIfHideoutIsNearby();
+        }
     }
 
     private void FixedUpdate()
     {
-        if (!IsMoving && CanShoot)
+        if (!IsMoving && CanShoot && GameManager.Instance.GameState.Player.Ammo > 0)
         {
             UpdateShooting();
         }
@@ -52,6 +58,46 @@ public class PlayerCharacter : MonoBehaviour
     private void OnDestroy()
     {
         Instance = null;
+    }
+
+    private void CheckIfHideoutIsNearby()
+    {
+        var distanceToHideout = Vector3.Distance(transform.position,
+            GameManager.Instance.BaseBuilder.HideoutInstance.transform.position);
+
+        if (!IsNearHideout && distanceToHideout <= 10)
+        {
+            OnEnterHideout();
+        } else if (IsNearHideout && distanceToHideout > 10)
+        {
+            OnLeaveHideout();
+        }
+    }
+
+    private void OnEnterHideout()
+    {
+        IsNearHideout = true;
+        
+        var gameState = GameManager.Instance.GameState;
+        
+        if (gameState.Player.FoodSupplies > 0)
+        {
+            gameState.Hideout.StoredFoodSupplies += gameState.Player.FoodSupplies;
+            gameState.Player.FoodSupplies = 0;
+        }
+        
+        if (gameState.Player.WaterSupplies > 0)
+        {
+            gameState.Hideout.StoredWaterSupplies += gameState.Player.WaterSupplies;
+            gameState.Player.WaterSupplies = 0;
+        }
+
+        gameState.Player.Ammo = MPlayer.AmmoMax;
+    }
+
+    private void OnLeaveHideout()
+    {
+        IsNearHideout = false;
     }
     
 #region Shooting
@@ -71,6 +117,9 @@ public class PlayerCharacter : MonoBehaviour
 
         _shootLineRenderer.gameObject.SetActive(true);
         _shootLineRenderer.SetPositions(new[]{transform.position + Vector3.up * 4f + fromToVector * 2, zombie.transform.position + Vector3.up * 4f});
+
+        GameManager.Instance.GameState.Player.Ammo--;
+        GameManager.Instance.SaveGameState();
         
         yield return new WaitForSeconds(0.1f);
 
