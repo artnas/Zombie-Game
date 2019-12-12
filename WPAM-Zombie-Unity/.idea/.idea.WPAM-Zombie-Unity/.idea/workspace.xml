@@ -2,33 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5cf4506-0f0f-48ef-a237-c183f164cfed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPath.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/Idle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/Idle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/PatrolPath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/PatrolPath.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/RunAtPlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/RunAtPlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/ZombieState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/ZombieState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/ZombieUtilities.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/ZombieUtilities.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/LocationGameSpawnRuinsModifier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Park/LocationGameSpawnRuinsModifier.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Path.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Path.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vox/Details/Trees-Cluster-1.vox" beforeDir="false" afterPath="$PROJECT_DIR$/Vox/Details/Trees-Cluster-1.vox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Noise.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Noise.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Radius.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Radius.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Kino/Obscurance/Shader/Common.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/46C28768-88CA-4405-B893-CEA4E20D647F/b6/e0492486/VectorTileFeature.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Textures/Noise.psd.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Utils/Vector2d/RectD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/DataContainers/TileJsonData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -95,6 +80,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/46C28768-88CA-4405-B893-CEA4E20D647F/03/b9d3e8da/VectorTile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Imported/IngameDebugConsole/Scripts/DebugLogManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Tests/UnitTests/Editor/MapboxUnitTests_VectorTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/ILocationProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/TransformLocationProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/46C28768-88CA-4405-B893-CEA4E20D647F/21/faabc45d/VectorTileLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Imported/IngameDebugConsole/Scripts/DebugLogRecycledListView.cs" root0="FORCE_HIGHLIGHTING" />
@@ -103,6 +89,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/SourceLayers/ILayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/LoftModifier.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/Location.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/AbstractEditorLocationProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Unity/Location/LocationProviderFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Mapbox/Core/mapbox-sdk-cs/Map/VectorTile.cs" root0="FORCE_HIGHLIGHTING" />
@@ -126,9 +113,7 @@
         <option value="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/LayerVisualizers/VectorLayerVisualizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/MeshModifiers/LoftModifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautDirections.cs" />
-        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NavigationUtilities.cs" />
-        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Mapbox/Unity/MeshGeneration/Modifiers/GameObjectModifiers/SpawnInsideModifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Zombie State/Idle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Zombie State/ZombieState.cs" />
@@ -137,10 +122,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Zombie/ZombieUtilities.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Zombie/States/ZombieState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Zombie/Zombie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/ZombieUtilities.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/RunAtPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/ZombieState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/PatrolPath.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPath.cs" />
@@ -148,7 +130,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/Idle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/RunAtPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameEventsSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/CharacterMovement.cs" />
       </list>
     </option>
   </component>
@@ -207,7 +195,8 @@
       <workItem from="1575377268516" duration="1074000" />
       <workItem from="1575731123627" duration="16839000" />
       <workItem from="1575816300579" duration="7322000" />
-      <workItem from="1576077768847" duration="12224000" />
+      <workItem from="1576077768847" duration="12928000" />
+      <workItem from="1576165766055" duration="3382000" />
     </task>
     <task id="LOCAL-00001" summary="7-12-2019">
       <created>1575735691475</created>
@@ -230,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575831697977</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="11-12-2019">
+      <created>1576091466715</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576091466715</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +252,8 @@
     <MESSAGE value="7-12-2019" />
     <MESSAGE value="Commit unversioned files" />
     <MESSAGE value="8-12-2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="8-12-2019" />
+    <MESSAGE value="11-12-2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="11-12-2019" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

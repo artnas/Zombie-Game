@@ -23,8 +23,6 @@
 			}
 		}
 
-		Vector3 _targetPosition;
-
 		void Start()
 		{
 			LocationProviderFactory.Instance.mapManager.OnInitialized += () => _isInitialized = true;
@@ -35,7 +33,13 @@
 			if (_isInitialized)
 			{
 				var map = LocationProviderFactory.Instance.mapManager;
-				transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
+				var worldPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
+
+				if (transform.position != worldPosition)
+				{
+					transform.position = worldPosition;
+					Debug.Log($"Target moved to: {worldPosition}");
+				}
 			}
 		}
 	}

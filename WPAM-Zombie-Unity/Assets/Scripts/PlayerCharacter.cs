@@ -18,10 +18,15 @@ public class PlayerCharacter : MonoBehaviour
     public bool CanShoot = true;
     public bool IsMoving = false;
 
+    private Transform _cameraTransform;
+    private Vector3 _cameraOffset;
+
     void Start()
     {
         _animation = GetComponentInChildren<Animation>();
         _shootLineRenderer = GetComponentInChildren<LineRenderer>(true);
+        _cameraTransform = Camera.main.transform;
+        _cameraOffset = _cameraTransform.position - transform.position;
         Instance = this;
         
         var visionRadiusTransform = transform.Find("Radius");
@@ -33,7 +38,7 @@ public class PlayerCharacter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        _cameraTransform.transform.position = transform.position + _cameraOffset;
     }
 
     private void FixedUpdate()

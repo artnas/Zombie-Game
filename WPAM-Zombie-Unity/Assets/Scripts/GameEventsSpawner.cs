@@ -13,7 +13,7 @@ namespace DefaultNamespace
         private Coroutine _behaviourCoroutine;
 
         public GameObject ZombiePrefab;
-        private Vector2 _zombieSpawnRadiusRange = new Vector2(40, 60);
+        private Vector2 _zombieSpawnRadiusRange = new Vector2(25, 60);
         public int MaxZombiesCount = 5;
 
         private void Start()
@@ -58,7 +58,14 @@ namespace DefaultNamespace
                 GameManager.Instance.Zombies.Count < MaxZombiesCount)
             {
                 // var playerPosition = PlayerCharacter.Instance.transform.position;
-                var randomRoad = GameManager.Instance.GetRoadSuitableForNewZombie(10, _zombieSpawnRadiusRange);
+                var randomRoad = GameManager.Instance.GetRoadSuitableForNewZombie(4, _zombieSpawnRadiusRange);
+
+                if (randomRoad == null)
+                {
+                    // nie znaleziono prawidłowej drogi
+                    // Debug.Log("Tried to spawn a zombie, but couldn't find a suitable road.'");
+                    return false;
+                }
 
                 var spawnedGameObject = Instantiate(ZombiePrefab, randomRoad.GetRandomPoint(), Quaternion.identity);
                 var spawnedZombie = spawnedGameObject.GetComponent<Zombie>();

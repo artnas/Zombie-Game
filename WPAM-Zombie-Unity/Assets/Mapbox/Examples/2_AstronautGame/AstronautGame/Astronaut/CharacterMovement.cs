@@ -33,10 +33,11 @@ namespace Mapbox.Examples
 			// }
 
 			var distance = Vector3.Distance(transform.position, Target.position);
-			if (distance > 0.1f)
+			if (distance > 0.01f)
 			{
 				transform.LookAt(Target.position);
-				transform.Translate(Vector3.forward * (Speed * Time.deltaTime));
+				transform.position = Vector3.Lerp(transform.position, Target.position, Time.deltaTime * 2f);
+				// transform.Translate(Vector3.forward * (Speed * Time.deltaTime));
 				// CharacterAnimator.SetBool("IsWalking", true);
 				_playerCharacter.IsMoving = true;
 				Animation.Play("Player-Gun-Walk");

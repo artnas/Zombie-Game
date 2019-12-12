@@ -1845,7 +1845,7 @@ MonoBehaviour:
   _autoFireEvent: 1
   _updateInterval: 0.1
   _sendEvent: 0
-  _latitudeLongitude: 52.220050, 21.015789
+  _latitudeLongitude: 53.03436, 18.58236
   _targetTransform: {fileID: 0}
 --- !u!1001 &1083778081
 PrefabInstance:
