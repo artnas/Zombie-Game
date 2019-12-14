@@ -64,6 +64,8 @@ namespace Enemy.States
         {
             _target = _arguments.Path.Points.First();
             _currentTargetIndex = 0;
+
+            if (Zombie == null) return;
             
             if (_arguments.StartOnClosestPoint)
             {

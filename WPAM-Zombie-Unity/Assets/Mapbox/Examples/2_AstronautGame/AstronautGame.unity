@@ -2589,8 +2589,8 @@ MonoBehaviour:
   CreateBaseButton: {fileID: 1711919897}
   CreateOutpostButton: {fileID: 1646858924}
   IpAddressInputField: {fileID: 1689555563}
-  ConnectButton: {fileID: 0}
-  ConnectButtonText: {fileID: 0}
+  ConnectButton: {fileID: 1671466382}
+  ConnectButtonText: {fileID: 1370892932}
   GameModeParent: {fileID: 755806508}
   OptionsModeParent: {fileID: 861120831}
 --- !u!1 &1370892929

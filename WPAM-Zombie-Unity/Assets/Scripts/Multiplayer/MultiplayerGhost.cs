@@ -16,13 +16,13 @@ namespace DefaultNamespace.Multiplayer
         private void Update()
         {
             var distance = Vector3.Distance(transform.position, DesiredPosition);
-            transform.position = Vector3.Lerp(transform.position, DesiredPosition, Time.deltaTime * 15f);
+            transform.position = Vector3.Lerp(transform.position, DesiredPosition, Time.deltaTime * 5f);
             
             var directionVector = (DesiredPosition - transform.position).normalized;
             if (directionVector != Vector3.zero)
             {
                 transform.rotation = Quaternion.Lerp(transform.rotation,
-                    Quaternion.LookRotation(directionVector, Vector3.up), Time.deltaTime * 10f);
+                    Quaternion.LookRotation(directionVector, Vector3.up), Time.deltaTime * 15f);
             }
             
             if (distance < 0.1f)

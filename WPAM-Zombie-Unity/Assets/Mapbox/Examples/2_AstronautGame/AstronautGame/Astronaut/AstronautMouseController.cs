@@ -162,16 +162,21 @@ namespace Mapbox.Examples
 		#region Character : Rotation
 		IEnumerator LookAtNextPos()
 		{
-			Quaternion neededRotation = Quaternion.LookRotation(nextPos - character.transform.position);
-			Quaternion thisRotation = character.transform.localRotation;
+			var lookVector = nextPos - character.transform.position;
 
-			float t = 0;
-			while (t < 1.0f)
+			if (lookVector != Vector3.zero)
 			{
-				t += Time.deltaTime / 0.25f;
-				var rotationValue = Quaternion.Slerp(thisRotation, neededRotation, t);
-				character.transform.rotation = Quaternion.Euler(0, rotationValue.eulerAngles.y, 0);
-				yield return null;
+				Quaternion neededRotation = Quaternion.LookRotation(lookVector);
+				Quaternion thisRotation = character.transform.localRotation;
+
+				float t = 0;
+				while (t < 1.0f)
+				{
+					t += Time.deltaTime / 0.25f;
+					var rotationValue = Quaternion.Slerp(thisRotation, neededRotation, t);
+					character.transform.rotation = Quaternion.Euler(0, rotationValue.eulerAngles.y, 0);
+					yield return null;
+				}
 			}
 		}
 		#endregion

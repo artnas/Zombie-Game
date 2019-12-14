@@ -18,14 +18,14 @@ namespace DefaultNamespace.Multiplayer
         
         private bool IsConnected = false;
         public string IpAddress;
-        private ClientSocket _clientSocket;
+        public ClientSocket ClientSocket;
         private string _clientIdentifier;
-        private float _sendDataInterval = 1f / 15f;
+        private float _sendDataInterval = 1f / 2f;
         private WaitForSeconds _sendDataWait;
         private Coroutine _sendDataCoroutine;
 
         private Dictionary<string, MClientState> _clientStates;
-        private Dictionary<string, Transform> _playerGhosts = new Dictionary<string, Transform>();
+        private Dictionary<string, MultiplayerGhost> _playerGhosts = new Dictionary<string, MultiplayerGhost>();
         
         private void Start()
         {
@@ -38,14 +38,14 @@ namespace DefaultNamespace.Multiplayer
         {
             UpdateVisualisation();
 
-            if (_clientSocket != null && _clientSocket.ThreadLog.Count > 0)
+            if (ClientSocket != null && ClientSocket.ThreadLog.Count > 0)
             {
                 // foreach (var log in _clientSocket.ThreadLog)
                 // {
                 //     Debug.Log(log);
                 // }
                 
-                _clientSocket.ThreadLog.Clear();
+                ClientSocket.ThreadLog.Clear();
             }
         }
 
@@ -53,7 +53,7 @@ namespace DefaultNamespace.Multiplayer
         {
             while (true)
             {
-                if (_clientSocket != null && _clientSocket.IsConnected())
+                if (ClientSocket != null && ClientSocket.IsConnected())
                 {
                     SendData();
                 }
@@ -64,7 +64,7 @@ namespace DefaultNamespace.Multiplayer
         private void SendData()
         {
             // Debug.Log($"Client: Send data");
-            _clientSocket.Send(GetSerializedClientState() + "\n");
+            ClientSocket.Send(GetSerializedClientState() + "\n");
         }
 
         private void ReceiveData(string message)
@@ -77,15 +77,15 @@ namespace DefaultNamespace.Multiplayer
                 
                 // Debug.Log($"Client: Received states {_clientStates.Count}");
 
-                // foreach (var entry in _clientStates)
-                // {
-                //     Debug.Log($"{entry.Key}: {entry.Value.GeoPosition}");
-                // }
+                foreach (var entry in _clientStates)
+                {
+                    Debug.Log($"{entry.Key}: {entry.Value.GeoPosition}");
+                }
             }
             catch (Exception ex)
             {
                 Debug.LogError($"Received message couldn't be parsed: {message}, {ex.Message}");
-                _clientStates = null;
+                // _clientStates = null;
             }
         }
         
@@ -96,21 +96,24 @@ namespace DefaultNamespace.Multiplayer
         
         public void Connect()
         {
-            if (_clientSocket == null)
+            if (ClientSocket == null)
             {
                 // Debug.Log("GameClient: Created client socket");
-                _clientSocket = new ClientSocket(IPAddress.Parse(IpAddress), 10000);
+                ClientSocket = new ClientSocket(IPAddress.Parse(IpAddress), 10000);
             }
             
             // Debug.Log("GameClient: Starting client socket");
-            _clientSocket.Start();
-            _clientSocket.ReceiveMessageEvent += ReceiveData;
+            ClientSocket.Start();
+            ClientSocket.ReceiveMessageEvent += ReceiveData;
             // Debug.Log("GameClient: Started client socket");
         }
 
         public void Disconnect()
         {
-            _clientSocket.Stop();
+            ClientSocket.Stop();
+            ClientSocket = null;
+            _clientStates.Clear();
+            UpdateVisualisation();
         }
         
         private string GetSerializedClientState()
@@ -132,12 +135,12 @@ namespace DefaultNamespace.Multiplayer
 
         private void OnDestroy()
         {
-            _clientSocket.Stop();
+            ClientSocket.Stop();
         }
 
         private void UpdateVisualisation()
         {
-            if (_clientStates == null || _clientStates.Count == 0)
+            if (ClientSocket == null || !ClientSocket.IsConnected() || _clientStates == null || _clientStates.Count == 0)
             {
                 if (_playerGhosts.Count != 0)
                 {
@@ -148,40 +151,66 @@ namespace DefaultNamespace.Multiplayer
                     
                     _playerGhosts.Clear();
                 }
-                
-                return;
             }
-            
-            foreach (var clientStateEntry in _clientStates)
+            else
             {
-                var identifier = clientStateEntry.Key;
-
-                if (identifier == _clientIdentifier) continue;
-                
-                var hasFoundIdentifier = false;
-                
-                var worldPosition = LocationProviderFactory.Instance.mapManager.GeoToWorldPosition(clientStateEntry.Value.GeoPosition);
-                
-                foreach (var playerGhostEntry in _playerGhosts)
+                foreach (var clientStateEntry in _clientStates)
                 {
-                    if (playerGhostEntry.Key == identifier)
-                    {
-                        hasFoundIdentifier = true;
-                        
-                        // aktualizuj ducha
+                    var identifier = clientStateEntry.Key;
 
-                        playerGhostEntry.Value.GetComponent<MultiplayerGhost>().DesiredPosition = worldPosition;
+                    if (identifier == _clientIdentifier) continue;
+                
+                    var hasFoundIdentifier = false;
+                
+                    var worldPosition = LocationProviderFactory.Instance.mapManager.GeoToWorldPosition(clientStateEntry.Value.GeoPosition);
+                
+                    foreach (var playerGhostEntry in _playerGhosts)
+                    {
+                        if (playerGhostEntry.Key == identifier)
+                        {
+                            hasFoundIdentifier = true;
+                        
+                            // aktualizuj ducha
+
+                            playerGhostEntry.Value.DesiredPosition = worldPosition;
+                        }
+                    }
+
+                    if (!hasFoundIdentifier)
+                    {
+                        // stwórz nowego ducha
+
+                        var newGhost = Instantiate(MultiplayerGhostPrefab, worldPosition, Quaternion.identity);
+                        newGhost.name = identifier;
+                        
+                        var newMultiplayerGhostComponent = newGhost.GetComponent<MultiplayerGhost>();
+                        
+                        newMultiplayerGhostComponent.DesiredPosition = worldPosition;
+                        _playerGhosts.Add(identifier, newMultiplayerGhostComponent);
                     }
                 }
 
-                if (!hasFoundIdentifier)
+                List<KeyValuePair<string, MultiplayerGhost>> ghostsToRemove = null;
+                foreach (var entry in _playerGhosts)
                 {
-                    // stwórz nowego ducha
+                    if (!_clientStates.ContainsKey(entry.Key))
+                    {
+                        if (ghostsToRemove == null)
+                        {
+                            ghostsToRemove = new List<KeyValuePair<string, MultiplayerGhost>>();
+                        }
+                        
+                        ghostsToRemove.Add(entry);
+                    }
+                }
 
-                    var newGhost = Instantiate(MultiplayerGhostPrefab, worldPosition, Quaternion.identity);
-                    newGhost.name = identifier;
-                    newGhost.GetComponent<MultiplayerGhost>().DesiredPosition = worldPosition;
-                    _playerGhosts.Add(identifier, newGhost.transform);
+                if (ghostsToRemove != null)
+                {
+                    foreach (var entry in ghostsToRemove)
+                    {
+                        Destroy(entry.Value.gameObject);
+                        _playerGhosts.Remove(entry.Key);
+                    }
                 }
             }
         }

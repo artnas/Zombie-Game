@@ -14,6 +14,7 @@ namespace DefaultNamespace.Multiplayer
         private int _serverPort;
         private Thread _thread;
         private Socket _sender;
+        private bool _isConnecting = false;
 
         public delegate void ReceiveMessage(string text);
 
@@ -51,8 +52,10 @@ namespace DefaultNamespace.Multiplayer
 
         private void StartClient()
         {
+            _isConnecting = true;
+            
             // Data buffer for incoming data.  
-            byte[] bytes = new byte[1024];
+            byte[] bytes = new byte[4096];
             
             ThreadLog.Enqueue("ClientSocket: Starting client");
 
@@ -76,6 +79,8 @@ namespace DefaultNamespace.Multiplayer
                     _sender.Connect(remoteEP);
                     // Debug.Log($"Socket connected to {_sender.RemoteEndPoint}");
                     ThreadLog.Enqueue($"Socket connected to {_sender.RemoteEndPoint}");
+
+                    _isConnecting = false;
 
                     while (true)
                     {
@@ -117,12 +122,14 @@ namespace DefaultNamespace.Multiplayer
                 {
                     // Debug.Log($"Unexpected exception : {e}");
                     ThreadLog.Enqueue($"Unexpected exception : {e}");
+                    _isConnecting = false;
                 }
             }
             catch (Exception e)
             {
                 // Debug.Log($"Unexpected exception : {e}");
                 ThreadLog.Enqueue($"Unexpected exception : {e}");
+                _isConnecting = false;
             }
         }
 
@@ -137,6 +144,11 @@ namespace DefaultNamespace.Multiplayer
         public bool IsConnected()
         {
             return (_sender != null && _sender.Connected);
+        }
+
+        public bool IsConnecting()
+        {
+            return _isConnecting;
         }
 
     }

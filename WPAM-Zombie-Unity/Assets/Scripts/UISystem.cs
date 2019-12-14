@@ -194,15 +194,49 @@ namespace DefaultNamespace
 
         public void ConnectToMultiplayer()
         {
-            var ipAddress = IpAddressInputField.text;
-
-            GameManager.Instance.GameClient.IpAddress = ipAddress;
-            GameManager.Instance.GameClient.Connect();
+            switch (ConnectButtonText.text)
+            {
+                case "Połącz":
+                {
+                    var ipAddress = IpAddressInputField.text;
+                    GameManager.Instance.GameClient.IpAddress = ipAddress;
+                    GameManager.Instance.GameClient.Connect();
+                    break;
+                }
+                case "Rozłącz":
+                {
+                    GameManager.Instance.GameClient.Disconnect();
+                    break;
+                }
+            }
         }
 
         private void UpdateConnectButton()
         {
-            // TODO
+            var gameClient = GameManager.Instance.GameClient;
+
+            if (gameClient.ClientSocket != null)
+            {
+                if (gameClient.ClientSocket.IsConnecting())
+                {
+                    ConnectButtonText.text = "Łączenie...";
+                    ConnectButton.interactable = false;
+                } else if (gameClient.ClientSocket.IsConnected())
+                {
+                    ConnectButtonText.text = "Rozłącz";
+                    ConnectButton.interactable = true;
+                }
+                else
+                {
+                    ConnectButtonText.text = "Połącz";
+                    ConnectButton.interactable = true;
+                }
+            }
+            else
+            {
+                ConnectButtonText.text = "Połącz";
+                ConnectButton.interactable = true;
+            }
         }
     }
 }

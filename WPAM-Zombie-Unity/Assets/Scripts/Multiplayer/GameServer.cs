@@ -13,7 +13,7 @@ namespace DefaultNamespace.Multiplayer
     public class GameServer : MonoBehaviour
     {
         private ServerSocket _serverSocket;
-        private float _sendDataInterval = 1f / 15f;
+        private float _sendDataInterval = 1f / 2f;
         private WaitForSeconds _sendDataWait;
         private Coroutine _sendDataCoroutine;
         private Dictionary<string, MClientState> _clientStates = new Dictionary<string, MClientState>();
@@ -32,6 +32,7 @@ namespace DefaultNamespace.Multiplayer
         {
             while (true)
             {
+                RemoveOldClientStates();
                 SendData();
                 yield return _sendDataWait;
             }
@@ -48,7 +49,36 @@ namespace DefaultNamespace.Multiplayer
         private string GetSerializedClientStatesDictionary()
         {
             var statesCopy = new Dictionary<string, MClientState>(_clientStates);
-            return JsonConvert.SerializeObject(statesCopy, Formatting.Indented);
+            return JsonConvert.SerializeObject(statesCopy, Formatting.None) + "\n";
+        }
+
+        private void RemoveOldClientStates()
+        {
+            if (_clientStates != null)
+            {
+                List<string> statesToRemove = null;
+
+                foreach (var state in _clientStates)
+                {
+                    if ((DateTime.Now - state.Value.DateTime).TotalSeconds > 3)
+                    {
+                        if (statesToRemove == null)
+                        {
+                            statesToRemove = new List<string>();
+                        }
+
+                        statesToRemove.Add(state.Key);
+                    }
+                }
+
+                if (statesToRemove != null)
+                {
+                    foreach (var stateToRemove in statesToRemove)
+                    {
+                        _clientStates.Remove(stateToRemove);
+                    }
+                }
+            }
         }
 
         private void ReceiveData(string message)

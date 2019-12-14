@@ -2,28 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5cf4506-0f0f-48ef-a237-c183f164cfed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ClientSocket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ClientSocket.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameClient.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/MClientState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/MClientState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/MultiplayerGhost.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/MultiplayerGhost.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ServerSocket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ServerSocket.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WPAM-Zombie-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BaseBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BaseBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUtilities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ClientSocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ClientSocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/MultiplayerGhost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/MultiplayerGhost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ServerSocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ServerSocket.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UISystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UISystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +143,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/ZombieUtilities.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/ZombieState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/PatrolPath.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPath.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Path.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/Idle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPlayer.cs" />
@@ -166,7 +154,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Hideout.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/MHideout.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/MPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Turret.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemType.cs" />
@@ -175,17 +162,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DeathScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/RunAtPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameUtilities.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UISystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/MClientState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ClientSocket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ServerSocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BaseBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/Scripts/ImmediatePositionWithLocationProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mapbox/Examples/2_AstronautGame/AstronautGame/Astronaut/AstronautMouseController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/Zombie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/States/FollowPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ClientSocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/MultiplayerGhost.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UISystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/ServerSocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameClient.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Multiplayer/GameServer.cs" />
       </list>
     </option>
   </component>
@@ -246,7 +235,7 @@
       <workItem from="1575816300579" duration="7322000" />
       <workItem from="1576077768847" duration="12928000" />
       <workItem from="1576165766055" duration="22167000" />
-      <workItem from="1576240357529" duration="19745000" />
+      <workItem from="1576240357529" duration="24157000" />
     </task>
     <task id="LOCAL-00001" summary="7-12-2019">
       <created>1575735691475</created>
@@ -283,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576169189366</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="14-12-2019">
+      <created>1576338809486</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576338809486</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +307,8 @@
     <MESSAGE value="8-12-2019" />
     <MESSAGE value="11-12-2019" />
     <MESSAGE value="12-12-2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="12-12-2019" />
+    <MESSAGE value="14-12-2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="14-12-2019" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

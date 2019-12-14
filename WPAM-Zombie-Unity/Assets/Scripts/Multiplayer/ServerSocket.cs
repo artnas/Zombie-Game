@@ -13,7 +13,7 @@ namespace DefaultNamespace.Multiplayer
         // Client  socket.  
         public Socket workSocket = null;  
         // Size of receive buffer.  
-        public const int BufferSize = 1024;  
+        public const int BufferSize = 4096;  
         // Receive buffer.  
         public byte[] buffer = new byte[BufferSize];  
         // Received data string.  
@@ -185,11 +185,20 @@ namespace DefaultNamespace.Multiplayer
         {
             byte[] byteData = Encoding.ASCII.GetBytes(message);
             
-            foreach (var client in _connectedClients)
+            for (var i = 0; i < _connectedClients.Count; i++)
             {
-                // Debug.Log($"Sending to {client.LocalEndPoint}");
-                client.BeginSend(byteData, 0, byteData.Length, 0,
-                    OnMessageSentToClient, client);
+                var client = _connectedClients[i];
+                if (client.Connected)
+                {
+                    // Debug.Log($"Sending to {client.LocalEndPoint}");
+                    client.BeginSend(byteData, 0, byteData.Length, 0,
+                        OnMessageSentToClient, client);
+                }
+                else
+                {
+                    _connectedClients.RemoveAt(i);
+                    i--;
+                }
             }
         }
 
