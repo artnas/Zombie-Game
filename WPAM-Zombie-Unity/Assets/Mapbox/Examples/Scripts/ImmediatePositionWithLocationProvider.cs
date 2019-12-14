@@ -38,7 +38,7 @@
 				if (transform.position != worldPosition)
 				{
 					transform.position = worldPosition;
-					Debug.Log($"Target moved to: {worldPosition}");
+					// Debug.Log($"Target moved to: {worldPosition}");
 				}
 			}
 		}

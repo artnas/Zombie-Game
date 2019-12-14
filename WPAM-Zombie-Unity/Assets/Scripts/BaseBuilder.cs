@@ -41,7 +41,7 @@ namespace DefaultNamespace
         {
             var map = LocationProviderFactory.Instance.mapManager;
             var worldPosition = map.GeoToWorldPosition(hideoutModel.GeoPosition);
-            Debug.Log($"{hideoutModel.GeoPosition} -> {worldPosition}");
+            // Debug.Log($"{hideoutModel.GeoPosition} -> {worldPosition}");
 
             var instance = Instantiate(HideoutPrefab, worldPosition, Quaternion.identity);
 
@@ -54,7 +54,7 @@ namespace DefaultNamespace
         {
             var map = LocationProviderFactory.Instance.mapManager;
             var worldPosition = map.GeoToWorldPosition(outpostModel.GeoPosition);
-            Debug.Log($"{outpostModel.GeoPosition} -> {worldPosition}");
+            // Debug.Log($"{outpostModel.GeoPosition} -> {worldPosition}");
 
             var instance = Instantiate(OutpostPrefab, worldPosition, Quaternion.identity);
             

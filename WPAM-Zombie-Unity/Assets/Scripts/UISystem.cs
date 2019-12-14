@@ -19,6 +19,16 @@ namespace DefaultNamespace
         public Button CreateBaseButton;
         public Button CreateOutpostButton;
 
+        public InputField IpAddressInputField;
+
+        public Button ConnectButton;
+        public Text ConnectButtonText;
+        
+        private GameObject _currentModeParent;
+
+        public GameObject GameModeParent;
+        public GameObject OptionsModeParent;
+
         ILocationProvider _locationProvider;
         ILocationProvider LocationProvider
         {
@@ -36,7 +46,9 @@ namespace DefaultNamespace
         private void Start()
         {
             Instance = this;
-            
+
+            ChangeMode(true);
+
             var gameState = GameManager.Instance.GameState;
             
             if (gameState.Hideout == null)
@@ -87,13 +99,25 @@ namespace DefaultNamespace
 
                 CreateBaseButton.gameObject.SetActive(false);
             });
+
+            if (PlayerPrefs.HasKey("IpAddress"))
+            {
+                IpAddressInputField.text = PlayerPrefs.GetString("IpAddress");
+            }
         }
 
         private void FixedUpdate()
         {
-            UpdateBuildOutpostButton();
-            UpdatePlayerInformationText();
-            UpdateHideoutInformationText();
+            if (_currentModeParent == GameModeParent)
+            {
+                UpdateBuildOutpostButton();
+                UpdatePlayerInformationText();
+                UpdateHideoutInformationText();
+            }
+            else
+            {
+                UpdateConnectButton();
+            }
         }
 
         private void UpdateBuildOutpostButton()
@@ -150,6 +174,35 @@ namespace DefaultNamespace
             {
                 HideoutInformationText.text = text;
             }
+        }
+
+        public void ChangeMode(bool isGame)
+        {
+            _currentModeParent = isGame ? GameModeParent : OptionsModeParent;
+
+            GameModeParent.SetActive(_currentModeParent == GameModeParent);
+            OptionsModeParent.SetActive(_currentModeParent == OptionsModeParent);
+        }
+
+        public void OnIpAddressInputChanged()
+        {
+            var text = IpAddressInputField.text;
+            
+            PlayerPrefs.SetString("IpAddress", text);
+            PlayerPrefs.Save();
+        }
+
+        public void ConnectToMultiplayer()
+        {
+            var ipAddress = IpAddressInputField.text;
+
+            GameManager.Instance.GameClient.IpAddress = ipAddress;
+            GameManager.Instance.GameClient.Connect();
+        }
+
+        private void UpdateConnectButton()
+        {
+            // TODO
         }
     }
 }

@@ -716,6 +716,14 @@
             <e p="MOutpost.cs" t="Include" />
             <e p="MPlayer.cs" t="Include" />
           </e>
+          <e p="Multiplayer" t="Include">
+            <e p="ClientSocket.cs" t="Include" />
+            <e p="GameClient.cs" t="Include" />
+            <e p="GameServer.cs" t="Include" />
+            <e p="MClientState.cs" t="Include" />
+            <e p="MultiplayerGhost.cs" t="Include" />
+            <e p="ServerSocket.cs" t="Include" />
+          </e>
           <e p="NavigationUtilities.cs" t="Include" />
           <e p="Outpost.cs" t="Include" />
           <e p="Path.cs" t="Include" />

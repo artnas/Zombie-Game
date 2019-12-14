@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
@@ -10,17 +11,17 @@ namespace DefaultNamespace
             var future = DateTime.Now.AddDays(supply);
             var timespan = future - DateTime.Now;
 
-            if (timespan.Days > 1)
+            if (timespan.TotalDays > 2)
             {
-                return $"około {timespan.Days} dni";
+                return $"około {Mathf.RoundToInt((float)timespan.TotalDays)} dni";
             }
-            else if (timespan.Hours > 1)
+            else if (timespan.TotalHours > 1)
             {
-                return $"około {timespan.Hours} dni";
+                return $"około {Mathf.RoundToInt((float)timespan.TotalHours)} godzin";
             }
-            else if (timespan.Minutes > 5)
+            else if (timespan.TotalMinutes > 5)
             {
-                return $"około {timespan.Minutes} minut";
+                return $"około {Mathf.RoundToInt((float)timespan.TotalMinutes)} minut";
             }
             else if (timespan.TotalSeconds > 0)
             {

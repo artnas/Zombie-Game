@@ -168,6 +168,8 @@ namespace Enemy
 
         public void ChangeState(ZombieState newState, object argument)
         {
+            if (!IsAlive) return;
+            
             var previousState = CurrentState;
             previousState?.OnTransitionOut(argument, newState);
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using DefaultNamespace.Models;
+using DefaultNamespace.Multiplayer;
 using Enemy;
 using Mapbox.Map;
 using Mapbox.Unity.Map;
@@ -22,6 +23,7 @@ namespace DefaultNamespace
         public List<Path> Roads = new List<Path>();
         public MGameState GameState;
         public BaseBuilder BaseBuilder;
+        public GameClient GameClient;
         
         public GameObject[] ItemPrefabs = new GameObject[0];
         
@@ -220,7 +222,7 @@ namespace DefaultNamespace
                     
                     for (var i = 0; i < 5; i++)
                     {
-                        var interpolatedPoint = road.GetInterpolatedPoint(i / 5f);
+                        var interpolatedPoint = road.GetInterpolatedPoint(i / 4f);
 
                         var distance = GetMinDistanceFromPlayerAndBuildings(interpolatedPoint);
                         if (distance < rangeFromPlayer.x || distance > rangeFromPlayer.y)
@@ -229,8 +231,31 @@ namespace DefaultNamespace
                             break;
                         }
                     }
+                    
+                    if (!roadIsInRange) continue;
+                    var isRoadFarFromOtherRoads = true;
+                    
+                    for (var i = 0; i < 5; i++)
+                    {
+                        var interpolatedPoint = road.GetInterpolatedPoint(i / 4f);
+                        
+                        foreach (var zombie in Zombies)
+                        {
+                            for (var j = 0; j < 5; j++)
+                            {
+                                var interpolatedZombieRoadPoint = zombie.OriginRoad.GetInterpolatedPoint(i / 4f);
 
-                    if (roadIsInRange)
+                                var distance = Vector3.Distance(interpolatedPoint, interpolatedZombieRoadPoint);
+                                if (distance < 5)
+                                {
+                                    isRoadFarFromOtherRoads = false;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    
+                    if (isRoadFarFromOtherRoads)
                     {
                         return road;
                     }
