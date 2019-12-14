@@ -31,8 +31,9 @@ namespace DefaultNamespace
             
             Directions.Query(directionResource, (DirectionsResponse response) =>
             {
-                if (null == response.Routes || response.Routes.Count < 1)
+                if (response?.Routes == null || response.Routes.Count < 1)
                 {
+                    Debug.Log("Nie znaleziono ścieżki");
                     // nie znaleziono ścieżki
                     return;
                 }
